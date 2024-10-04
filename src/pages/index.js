@@ -3,6 +3,7 @@ import '../../public/assets/css/plugins.css'
 import '../../public/assets/css/style.css'
 import '../../public/assets/css/colors/navy.css'
 
+import Script from 'next/script';
 
 export default function Home() {
 
@@ -1712,6 +1713,20 @@ export default function Home() {
       </div>
       {/* <script src="./assets/js/plugins.js"></script> */}
       {/* <script src="./assets/js/theme.js"></script> */}
+      <Script
+        src="/assets/js/plugins.js" // Ruta al archivo JavaScript
+        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
+        onLoad={() => {
+          console.log('El script plugins.js se ha cargado.');
+        }}
+      />
+      <Script
+        src="/assets/js/theme.js" // Ruta al archivo JavaScript
+        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
+        onLoad={() => {
+          console.log('El script plugins.js se ha cargado.');
+        }}
+      />
     </div>
   );
 }
