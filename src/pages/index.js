@@ -1,13 +1,10 @@
-import '../../public/assets/fonts/unicons/unicons.css'
-import '../../public/assets/css/plugins.css'
-import '../../public/assets/css/style.css'
-import '../../public/assets/css/colors/navy.css'
-
-import Script from 'next/script';
+import Script from "next/script";
+import "../../public/assets/fonts/unicons/unicons.css";
+import "../../public/assets/css/plugins.css";
+import "../../public/assets/css/style.css";
+import "../../public/assets/css/colors/navy.css";
 
 export default function Home() {
-
-
   return (
     <div>
       <div className="grow shrink-0">
@@ -41,7 +38,6 @@ export default function Home() {
                       <a
                         className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                         href="#"
-                        data-bs-toggle="dropdown"
                       >
                         Inicio
                       </a>
@@ -50,7 +46,6 @@ export default function Home() {
                       <a
                         className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                         href="#"
-                        data-bs-toggle="dropdown"
                       >
                         Sobre nosotros
                       </a>
@@ -59,7 +54,6 @@ export default function Home() {
                       <a
                         className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                         href="#"
-                        data-bs-toggle="dropdown"
                       >
                         Servicios
                       </a>
@@ -68,7 +62,6 @@ export default function Home() {
                       <a
                         className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                         href="#"
-                        data-bs-toggle="dropdown"
                       >
                         Testimonios
                       </a>
@@ -77,7 +70,6 @@ export default function Home() {
                       <a
                         className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                         href="#"
-                        data-bs-toggle="dropdown"
                       >
                         Contáctanos
                       </a>
@@ -91,7 +83,7 @@ export default function Home() {
                         href="mailto:first.last@email.com"
                         className="link-inverse"
                       >
-                        info@email.com
+                        info@email.commmm
                       </a>
                       <br /> 00 (123) 456 78 90 <br />
                       <nav className="nav social social-white mt-4">
@@ -134,186 +126,10 @@ export default function Home() {
                 {/* <!-- /.offcanvas-body --> */}
               </div>
               {/* <!-- /.navbar-collapse --> */}
-              <div className="navbar-other lg:!ml-4 xl:!ml-4">
-                <ul className="navbar-nav !flex-row !items-center !ml-auto">
-                  <li className="nav-item">
-                    <a
-                      className="nav-link hover:!text-[#343f52]"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvas-info"
-                    >
-                      <i className="uil uil-info-circle before:content-['\eb99'] !text-[1.1rem]"></i>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link hover:!text-[#343f52]"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvas-search"
-                    >
-                      <i className="uil uil-search before:content-['\eca5'] !text-[1.1rem]"></i>
-                    </a>
-                  </li>
-                  <li className="nav-item xl:hidden lg:hidden">
-                    <button className="hamburger offcanvas-nav-btn">
-                      <span></span>
-                    </button>
-                  </li>
-                </ul>
-                {/* <!-- /.navbar-nav --> */}
-              </div>
               {/* <!-- /.navbar-other --> */}
             </div>
             {/* <!-- /.container --> */}
           </nav>
-          {/* <!--/.modal --> */}
-          <div
-            className="offcanvas offcanvas-end text-inverse !text-[#cacaca] opacity-100"
-            id="offcanvas-info"
-            data-bs-scroll="true"
-          >
-            <div className="offcanvas-header flex flex-row items-center justify-between p-[1.5rem]">
-              <h3 className="text-white xl:!text-[1.5rem] text-[calc(1.275rem_+_0.3vw)] !leading-[1.4] mb-0">
-                Sandbox
-              </h3>
-              <button
-                type="button"
-                className="btn-close btn-close-white mr-[-0.5rem] m-0 p-0"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="offcanvas-body !pb-[1.5rem]">
-              <div className="widget mb-8">
-                <p>
-                  Sandbox is a multipurpose HTML5 template with various layouts
-                  which will be a great solution htmlFor your business.
-                </p>
-              </div>
-              {/* <!-- /.widget --> */}
-              <div className="widget mb-8">
-                <h4 className="widget-title text-white mb-[0.75rem] !text-[.95rem] !leading-[1.45]">
-                  Contact Info
-                </h4>
-                <address className=" not-italic leading-[inherit] mb-[1rem]">
-                  {" "}
-                  Moonshine St. 14/05 <br /> Light City, London{" "}
-                </address>
-                <a
-                  className="text-[#cacaca] hover:!text-[#343f52]"
-                  href="mailto:first.last@email.com"
-                >
-                  info@email.com
-                </a>
-                <br /> 00 (123) 456 78 90
-              </div>
-              {/* <!-- /.widget --> */}
-              <div className="widget mb-8">
-                <h4 className="widget-title text-white mb-[0.75rem] !text-[.95rem] !leading-[1.45]">
-                  Learn More
-                </h4>
-                <ul className="list-unstyled pl-0">
-                  <li>
-                    <a
-                      className="text-[#cacaca] hover:!text-[#343f52]"
-                      href="#"
-                    >
-                      Our Story
-                    </a>
-                  </li>
-                  <li className="mt-[.35rem]">
-                    <a
-                      className="text-[#cacaca] hover:!text-[#343f52]"
-                      href="#"
-                    >
-                      Terms of Use
-                    </a>
-                  </li>
-                  <li className="mt-[.35rem]">
-                    <a
-                      className="text-[#cacaca] hover:!text-[#343f52]"
-                      href="#"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li className="mt-[.35rem]">
-                    <a
-                      className="text-[#cacaca] hover:!text-[#343f52]"
-                      href="#"
-                    >
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              {/* <!-- /.widget --> */}
-              <div className="widget">
-                <h4 className="widget-title text-white mb-[0.75rem] !text-[.95rem] !leading-[1.45]">
-                  Follow Us
-                </h4>
-                <nav className="nav social social-white">
-                  <a
-                    className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                    href="#"
-                  >
-                    <i className="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i>
-                  </a>
-                  <a
-                    className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                    href="#"
-                  >
-                    <i className="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i>
-                  </a>
-                  <a
-                    className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                    href="#"
-                  >
-                    <i className="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i>
-                  </a>
-                  <a
-                    className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                    href="#"
-                  >
-                    <i className="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i>
-                  </a>
-                  <a
-                    className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                    href="#"
-                  >
-                    <i className="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i>
-                  </a>
-                </nav>
-                {/* <!-- /.social --> */}
-              </div>
-              {/* <!-- /.widget --> */}
-            </div>
-            {/* <!-- /.offcanvas-body --> */}
-          </div>
-          {/* <!-- /.offcanvas --> */}
-          <div
-            className="offcanvas offcanvas-top !bg-[#ffffff] "
-            id="offcanvas-search"
-            data-bs-scroll="true"
-          >
-            <div className="container flex flex-row py-6">
-              <form className=" search-form relative before:content-['\eca5'] before:block before:absolute before:-translate-y-2/4 before:text-[1rem] before:text-[#343f52] before:z-[1] before:right-auto before:top-2/4 before:font-Unicons w-full before:left-0 focus:!outline-offset-0 focus:outline-0">
-                <input
-                  id="search-form1"
-                  type="text"
-                  className="form-control text-[0.8rem] !shadow-none pl-[1.75rem] !pr-[.75rem] border-0 bg-inherit m-0 block w-full font-medium leading-[1.7] text-[#60697b] px-4 py-[0.6rem] rounded-[0.4rem] focus:!outline-offset-0 focus:outline-0"
-                  placeholder="Type keyword and hit enter"
-                />
-              </form>
-              <button
-                type="button"
-                className="btn-close leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out p-0 border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(0,0,0,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            {/* <!-- /.container --> */}
-          </div>
           {/* <!-- /.offcanvas --> */}
         </header>
         {/* <!-- /header --> */}
@@ -1083,11 +899,11 @@ export default function Home() {
               <figure
                 className="!rounded-[.4rem] absolute hidden lg:block xl:block px-[15px]"
                 style={{
-                  top: '50%',
-                  right: '0',
-                  width: '45%',
-                  height: 'auto',
-                  transform: 'translateY(-50%)',
+                  top: "50%",
+                  right: "0",
+                  width: "45%",
+                  height: "auto",
+                  transform: "translateY(-50%)",
                   zIndex: 2,
                 }}
               >
@@ -1140,7 +956,8 @@ export default function Home() {
                   Our Pricing
                 </h2>
                 <h3 className="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.25] tracking-[-0.03em] mb-10 xl:!px-20">
-                  We offer great prices and quality service htmlFor your business.
+                  We offer great prices and quality service htmlFor your
+                  business.
                 </h3>
               </div>
               {/*<!-- /column -->*/}
@@ -1655,14 +1472,14 @@ export default function Home() {
                             className="response"
                             id="mce-error-response2"
                             style={{
-                              display: 'none',
+                              display: "none",
                             }}
                           ></div>
                           <div
                             className="response"
                             id="mce-success-response2"
                             style={{
-                              display: 'none',
+                              display: "none",
                             }}
                           ></div>
                         </div>{" "}
@@ -1713,18 +1530,19 @@ export default function Home() {
       </div>
       {/* <script src="./assets/js/plugins.js"></script> */}
       {/* <script src="./assets/js/theme.js"></script> */}
+
       <Script
         src="/assets/js/plugins.js" // Ruta al archivo JavaScript
         strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
         onLoad={() => {
-          console.log('El script plugins.js se ha cargado.');
+          console.log("El script plugins.js se ha cargado.");
         }}
       />
       <Script
         src="/assets/js/theme.js" // Ruta al archivo JavaScript
         strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
         onLoad={() => {
-          console.log('El script plugins.js se ha cargado.');
+          console.log("El script plugins.js se ha cargado.");
         }}
       />
     </div>
