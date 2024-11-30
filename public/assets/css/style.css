@@ -7042,7 +7042,6 @@ textarea.form-control.is-invalid {
      -moz-user-select: none;
           user-select: none;
   white-space: nowrap;
-  border-radius: 0.4rem;
   border-width: 2px;
   border-style: solid;
   border-color: transparent;
@@ -7190,7 +7189,6 @@ blockquote.btn.icon-top:before {
 }
 
 .btn-lg {
-  border-radius: 0.4rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
   padding-top: 0.65rem;
@@ -12253,7 +12251,6 @@ blockquote.btn-gradient {
 .btn-lg {
   padding:0.65rem 1.4rem;
   font-size:0.85rem;
-  border-radius:0.4rem
 }
 
 .btn-sm {

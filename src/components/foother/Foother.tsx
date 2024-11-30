@@ -4,8 +4,8 @@ import '../../../public/assets/css/colors/navy.css'
 
 const Foother = () => {
   return (
-    <footer className="bg-[rgba(246,247,249,1)]">
-      <div className="container py-16 xl:!py-20 lg:!py-20 md:!py-20">
+    <footer className="">
+      <div className="container pt-16 xl:!pt-20 lg:!py-20 md:!pt-20">
         {/* <!--/div --> */}
         <hr className="mt-[3rem] mb-[3.5rem] opacity-100 m-[4.5rem_0] border-t border-solid border-[rgba(164,174,198,.2)]" />
         <div className="flex flex-wrap mx-[-15px] mt-[-30px] xl:mt-0 lg:mt-0">
@@ -119,7 +119,6 @@ const Foother = () => {
         <div
           style={{
             padding: "20px",
-            backgroundColor: "#f8f8f8",
             textAlign: "center",
           }}
         >
