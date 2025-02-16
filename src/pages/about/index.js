@@ -205,7 +205,7 @@ export default function About() {
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
                 <img
                   src="/assets/img/icons/lineal/megaphone.svg"
-                  className="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
+                  className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
                   alt="image"
                 />
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">
@@ -286,7 +286,7 @@ export default function About() {
                 >
                   <img
                     src="/assets/img/icons/lineal/list.svg"
-                    className="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4 m-[0_auto]"
+                    className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4 m-[0_auto]"
                     alt="image"
                   />
                   <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-4">
@@ -320,7 +320,7 @@ export default function About() {
               <div className="md:w-10/12 lg:w-10/12 xl:w-9/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
                 <img
                   src="/assets/img/icons/lineal/team.svg"
-                  className="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4 m-[0_auto]"
+                  className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4 m-[0_auto]"
                   alt="image"
                 />
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 xl:!px-[4.5rem] lg:!px-[4.5rem]">
@@ -331,22 +331,7 @@ export default function About() {
             </div>
             {/*<!--/.row -->*/}
             <div className="!relative">
-              <div
-                className="shape !rounded-[50%] !bg-[#fff8ee] rellax !w-[6rem] !h-[6rem] absolute z-[1]"
-                data-rellax-speed="1"
-                style={{
-                  bottom: "0.5rem",
-                  right: "-1.7rem",
-                }}
-              ></div>
-              <div
-                className="shape !rounded-[50%] bg-line red rellax !w-[6rem] !h-[6rem] absolute z-[1] opacity-50"
-                data-rellax-speed="1"
-                style={{
-                  top: "0.5rem",
-                  left: "-1.7rem",
-                }}
-              ></div>
+
               <div
                 className="swiper-container dots-closer !mb-6"
                 data-margin="0"
@@ -649,11 +634,7 @@ export default function About() {
               </div>
               {/* <!--/column --> */}
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-                <img
-                  src="/assets/img/icons/lineal/telemarketer.svg"
-                  className="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
-                  alt="image"
-                />
+              <img src="/assets/img/icons/lineal/telemarketer.svg" className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4" alt="image" />
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-8">
                 ¿Listo para una Sonrisa Espectacular? 
                 </h2>

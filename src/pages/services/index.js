@@ -418,6 +418,14 @@ export default function Services() {
                   duraderas,mientras priorizamos la comodidad y el bienestar de
                   nuestros pacientes.
                 </p>
+                <div>
+                  <a
+                    href="#"
+                    className="btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                  >
+                    Reservar cita
+                  </a>
+                </div>
                 {/* <!-- /.progress-list --> */}
               </div>
               <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
