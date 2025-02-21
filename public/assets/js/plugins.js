@@ -3347,7 +3347,7 @@
       sanitizeFn: null,
       selector: !1,
       template:
-        '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+        '<div className="tooltip" role="tooltip"><div className="tooltip-arrow"></div><div className="tooltip-inner"></div></div>',
       title: "",
       trigger: "hover focus",
     },
@@ -3725,7 +3725,7 @@
       offset: [0, 8],
       placement: "right",
       template:
-        '<div class="popover" role="tooltip"><div class="popover-arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
+        '<div className="popover" role="tooltip"><div className="popover-arrow"></div><h3 className="popover-header"></h3><div className="popover-body"></div></div>',
       trigger: "click",
     },
     Zi = { ...Qi.DefaultType, content: "(null|string|element|function)" };
@@ -6203,7 +6203,7 @@
                     c =
                       (L(e, "gvideo-container"),
                       o.insertBefore(
-                        g('<div class="gvideo-wrapper"></div>'),
+                        g('<div className="gvideo-wrapper"></div>'),
                         o.firstChild
                       ),
                       t.querySelector(".gvideo-wrapper")),
@@ -6238,7 +6238,7 @@
                             )) +
                             'preload="metadata" poster="' +
                             i.poster +
-                            '" x-webkit-airplay="allow" playsinline controls class="gvideo-local">') +
+                            '" x-webkit-airplay="allow" playsinline controls className="gvideo-local">') +
                           '<source src="'.concat(d, '">')),
                         (h = g((e += "</video>"))));
                       var e =
@@ -6291,7 +6291,10 @@
                     (o &&
                       (b(o) &&
                         (n = g(
-                          '<div class="ginlined-content">'.concat(o, "</div>")
+                          '<div className="ginlined-content">'.concat(
+                            o,
+                            "</div>"
+                          )
                         )),
                       H(o)) &&
                       ("none" == o.style.display && (o.style.display = "block"),
@@ -6398,7 +6401,7 @@
           return !((e = s.innerText.trim()).length <= t) &&
             ((e = e.substr(0, t - 1)), n)
             ? ((s = null),
-              e + '... <a href="#" class="desc-more">' + i + "</a>")
+              e + '... <a href="#" className="desc-more">' + i + "</a>")
             : e;
         },
       },
@@ -6533,9 +6536,9 @@
           prev: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175" xml:space="preserve"><g><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/></g></svg>',
         },
         slideHTML:
-          '<div class="gslide">\n    <div class="gslide-inner-content">\n        <div class="ginner-container">\n            <div class="gslide-media">\n            </div>\n            <div class="gslide-description">\n                <div class="gdesc-inner">\n                    <h4 class="gslide-title"></h4>\n                    <div class="gslide-desc"></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>',
+          '<div className="gslide">\n    <div className="gslide-inner-content">\n        <div className="ginner-container">\n            <div className="gslide-media">\n            </div>\n            <div className="gslide-description">\n                <div className="gdesc-inner">\n                    <h4 className="gslide-title"></h4>\n                    <div className="gslide-desc"></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>',
         lightboxHTML:
-          '<div id="glightbox-body" class="glightbox-container" tabindex="-1" role="dialog" aria-hidden="false">\n    <div class="gloader visible"></div>\n    <div class="goverlay"></div>\n    <div class="gcontainer">\n    <div id="glightbox-slider" class="gslider"></div>\n    <button class="gclose gbtn" aria-label="Close" data-taborder="3">{closeSVG}</button>\n    <button class="gprev gbtn" aria-label="Previous" data-taborder="2">{prevSVG}</button>\n    <button class="gnext gbtn" aria-label="Next" data-taborder="1">{nextSVG}</button>\n</div>\n</div>',
+          '<div id="glightbox-body" className="glightbox-container" tabindex="-1" role="dialog" aria-hidden="false">\n    <div className="gloader visible"></div>\n    <div className="goverlay"></div>\n    <div className="gcontainer">\n    <div id="glightbox-slider" className="gslider"></div>\n    <button className="gclose gbtn" aria-label="Close" data-taborder="3">{closeSVG}</button>\n    <button className="gprev gbtn" aria-label="Previous" data-taborder="2">{prevSVG}</button>\n    <button className="gnext gbtn" aria-label="Next" data-taborder="1">{nextSVG}</button>\n</div>\n</div>',
       },
       ie =
         (e(T, [
@@ -17213,7 +17216,7 @@ var _self =
         return (
           "<" +
           r.tag +
-          ' class="' +
+          ' className="' +
           r.classes.join(" ") +
           '"' +
           a +
@@ -19766,7 +19769,7 @@ var _self =
         }),
         (i.prototype.changeWord = function (e) {
           this.element.innerHTML =
-            '<span class="' +
+            '<span className="' +
             this.options.animation +
             '" style="display:inline-block;">' +
             e +
@@ -24185,12 +24188,10 @@ function polyfill() {
     }
     function P(e, t) {
       return e.transformEl
-        ? t
-            .find(e.transformEl)
-            .css({
-              "backface-visibility": "hidden",
-              "-webkit-backface-visibility": "hidden",
-            })
+        ? t.find(e.transformEl).css({
+            "backface-visibility": "hidden",
+            "-webkit-backface-visibility": "hidden",
+          })
         : t;
     }
     function $(e) {
@@ -24216,7 +24217,7 @@ function polyfill() {
       return (
         n.length ||
           ((n = O(
-            `<div class="swiper-slide-shadow${i ? "-" + i : ""}"></div>`
+            `<div className="swiper-slide-shadow${i ? "-" + i : ""}"></div>`
           )),
           e.append(n)),
         n
@@ -24328,7 +24329,7 @@ function polyfill() {
               : ((e = i.renderSlide
                   ? O(i.renderSlide.call(x, e, t))
                   : O(
-                      `<div class="${x.params.slideClass}" data-swiper-slide-index="${t}">${e}</div>`
+                      `<div className="${x.params.slideClass}" data-swiper-slide-index="${t}">${e}</div>`
                     )).attr("data-swiper-slide-index") ||
                   e.attr("data-swiper-slide-index", t),
                 i.cache && (x.virtual.cache[t] = e),
@@ -25229,18 +25230,18 @@ function polyfill() {
                 for (let e = 0; e < t; e += 1)
                   s.renderBullet
                     ? (i += s.renderBullet.call(l, e, s.bulletClass))
-                    : (i += `<${s.bulletElement} class="${s.bulletClass}"></${s.bulletElement}>`);
+                    : (i += `<${s.bulletElement} className="${s.bulletClass}"></${s.bulletElement}>`);
                 n.html(i), (l.pagination.bullets = n.find(A(s.bulletClass)));
               }
               "fraction" === s.type &&
                 ((i = s.renderFraction
                   ? s.renderFraction.call(l, s.currentClass, s.totalClass)
-                  : `<span class="${s.currentClass}"></span> / <span class="${s.totalClass}"></span>`),
+                  : `<span className="${s.currentClass}"></span> / <span className="${s.totalClass}"></span>`),
                 n.html(i)),
                 "progressbar" === s.type &&
                   ((i = s.renderProgressbar
                     ? s.renderProgressbar.call(l, s.progressbarFillClass)
-                    : `<span class="${s.progressbarFillClass}"></span>`),
+                    : `<span className="${s.progressbarFillClass}"></span>`),
                   n.html(i)),
                 "custom" !== s.type &&
                   c("paginationRender", l.pagination.$el[0]);
@@ -25571,7 +25572,9 @@ function polyfill() {
                   ),
                   e.find("." + l.params.scrollbar.dragClass));
               0 === t.length &&
-                ((t = O(`<div class="${l.params.scrollbar.dragClass}"></div>`)),
+                ((t = O(
+                  `<div className="${l.params.scrollbar.dragClass}"></div>`
+                )),
                 e.append(t)),
                 Object.assign(i, {
                   $el: e,
@@ -26742,7 +26745,7 @@ function polyfill() {
             };
           i("beforeInit", () => {
             o = O(
-              `<span class="${a.params.a11y.notificationClass}" aria-live="assertive" aria-atomic="true"></span>`
+              `<span className="${a.params.a11y.notificationClass}" aria-live="assertive" aria-atomic="true"></span>`
             );
           }),
             i("afterInit", () => {
@@ -27733,12 +27736,14 @@ function polyfill() {
                 : e.find(".swiper-slide-shadow-bottom");
             0 === s.length &&
               ((s = O(
-                `<div class="swiper-slide-shadow-${i ? "left" : "top"}"></div>`
+                `<div className="swiper-slide-shadow-${
+                  i ? "left" : "top"
+                }"></div>`
               )),
               e.append(s)),
               0 === n.length &&
                 ((n = O(
-                  `<div class="swiper-slide-shadow-${
+                  `<div className="swiper-slide-shadow-${
                     i ? "right" : "bottom"
                   }"></div>`
                 )),
@@ -27769,11 +27774,11 @@ function polyfill() {
               d.shadow &&
                 (u
                   ? (0 === (r = t.find(".swiper-cube-shadow")).length &&
-                      ((r = O('<div class="swiper-cube-shadow"></div>')),
+                      ((r = O('<div className="swiper-cube-shadow"></div>')),
                       t.append(r)),
                     r.css({ height: i + "px" }))
                   : 0 === (r = e.find(".swiper-cube-shadow")).length &&
-                    ((r = O('<div class="swiper-cube-shadow"></div>')),
+                    ((r = O('<div className="swiper-cube-shadow"></div>')),
                     e.append(r)));
               for (let a = 0; a < o.length; a += 1) {
                 const f = o.eq(a);
