@@ -1,6 +1,6 @@
 import React from "react";
-import '../../../public/assets/css/style.css'
-import '../../../public/assets/css/colors/navy.css'
+import "../../../public/assets/css/style.css";
+import "../../../public/assets/css/colors/navy.css";
 
 const Foother = () => {
   return (
@@ -103,7 +103,7 @@ const Foother = () => {
               <h4 className="widget-title !mb-1 !tracking-[-0.03em]">
                 Teléfono
               </h4>
-              <p className="!mb-5">00 123 456 78 90</p>
+              <p className="!mb-5"> (502) 5565 - 7921</p>
               {/* <!-- /.newsletter-wrapper --> */}
             </div>
             <div className="widget">

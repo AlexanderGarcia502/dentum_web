@@ -1,10 +1,10 @@
-import Script from "next/script";
 import Link from "next/link";
 import "../../../public/assets/fonts/unicons/unicons.css";
 import "../../../public/assets/css/plugins.css";
 import "../../../public/assets/css/style.css";
 import "../../../public/assets/css/colors/navy.css";
 import Foother from "@/components/foother/Foother";
+import { ScriptComponent } from "@/utils/Scripts";
 
 export default function About() {
   return (
@@ -343,7 +343,7 @@ export default function About() {
                 <img
                   className="!rounded-[.4rem]"
                   src="../../assets/img/photos/tei1.jpg"
-                  srcset="../../assets/img/photos/tei1@2x.jpg 2x"
+                  srcSet="../../assets/img/photos/tei1@2x.jpg 2x"
                   alt="image"
                 />
               </figure>
@@ -446,7 +446,7 @@ export default function About() {
                                     <img
                                       className="!rounded-[50%] !w-[3.5rem]"
                                       src="../../assets/img/avatars/te1.jpg"
-                                      srcset="../../assets/img/avatars/te1@2x.jpg 2x"
+                                      srcSet="../../assets/img/avatars/te1@2x.jpg 2x"
                                       alt="image"
                                     />
                                     <div className="info pl-4">
@@ -483,7 +483,7 @@ export default function About() {
                                     <img
                                       className="!rounded-[50%] !w-[3.5rem]"
                                       src="../../assets/img/avatars/te2.jpg"
-                                      srcset="../../assets/img/avatars/te2@2x.jpg 2x"
+                                      srcSet="../../assets/img/avatars/te2@2x.jpg 2x"
                                       alt="image"
                                     />
                                     <div className="info pl-4">
@@ -520,7 +520,7 @@ export default function About() {
                                     <img
                                       className="!rounded-[50%] !w-[3.5rem]"
                                       src="../../assets/img/avatars/te3.jpg"
-                                      srcset="../../assets/img/avatars/te3@2x.jpg 2x"
+                                      srcSet="../../assets/img/avatars/te3@2x.jpg 2x"
                                       alt="image"
                                     />
                                     <div className="info pl-4">
@@ -556,7 +556,7 @@ export default function About() {
                                     <img
                                       className="!rounded-[50%] !w-[3.5rem]"
                                       src="../../assets/img/avatars/te4.jpg"
-                                      srcset="../../assets/img/avatars/te4@2x.jpg 2x"
+                                      srcSet="../../assets/img/avatars/te4@2x.jpg 2x"
                                       alt="image"
                                     />
                                     <div className="info pl-4">
@@ -593,7 +593,7 @@ export default function About() {
                                     <img
                                       className="!rounded-[50%] !w-[3.5rem]"
                                       src="../../assets/img/avatars/te5.jpg"
-                                      srcset="../../assets/img/avatars/te5@2x.jpg 2x"
+                                      srcSet="../../assets/img/avatars/te5@2x.jpg 2x"
                                       alt="image"
                                     />
                                     <div className="info pl-4">
@@ -630,7 +630,7 @@ export default function About() {
                                     <img
                                       className="!rounded-[50%] !w-[3.5rem]"
                                       src="../../assets/img/avatars/te6.jpg"
-                                      srcset="../../assets/img/avatars/te6@2x.jpg 2x"
+                                      srcSet="../../assets/img/avatars/te6@2x.jpg 2x"
                                       alt="image"
                                     />
                                     <div className="info pl-4">
@@ -678,7 +678,7 @@ export default function About() {
                   <img
                     className="w-auto"
                     src="../../assets/img/illustrations/i4.png"
-                    srcset="../../assets/img/illustrations/i4@2x.png 2x"
+                    srcSet="../../assets/img/illustrations/i4@2x.png 2x"
                     alt="image"
                   />
                 </figure>
@@ -814,7 +814,7 @@ export default function About() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="../../assets/img/avatars/te1.jpg"
-                                  srcset="../../assets/img/avatars/te1@2x.jpg 2x"
+                                  srcSet="../../assets/img/avatars/te1@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -850,7 +850,7 @@ export default function About() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="../../assets/img/avatars/te2.jpg"
-                                  srcset="../../assets/img/avatars/te2@2x.jpg 2x"
+                                  srcSet="../../assets/img/avatars/te2@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -886,7 +886,7 @@ export default function About() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="../../assets/img/avatars/te3.jpg"
-                                  srcset="../../assets/img/avatars/te3@2x.jpg 2x"
+                                  srcSet="../../assets/img/avatars/te3@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -922,7 +922,7 @@ export default function About() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="../../assets/img/avatars/te4.jpg"
-                                  srcset="../../assets/img/avatars/te4@2x.jpg 2x"
+                                  srcSet="../../assets/img/avatars/te4@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -958,7 +958,7 @@ export default function About() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="../../assets/img/avatars/te5.jpg"
-                                  srcset="../../assets/img/avatars/te5@2x.jpg 2x"
+                                  srcSet="../../assets/img/avatars/te5@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -994,7 +994,7 @@ export default function About() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="../../assets/img/avatars/te6.jpg"
-                                  srcset="../../assets/img/avatars/te6@2x.jpg 2x"
+                                  srcSet="../../assets/img/avatars/te6@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -1045,7 +1045,7 @@ export default function About() {
                       <img
                         className="!rounded-[0.4rem]"
                         src="../../assets/img/photos/g5.jpg"
-                        srcset="../../assets/img/photos/g5@2x.jpg 2x"
+                        srcSet="../../assets/img/photos/g5@2x.jpg 2x"
                         alt="image"
                       />
                     </figure>
@@ -1058,7 +1058,7 @@ export default function About() {
                           <img
                             className="!rounded-[0.4rem]"
                             src="../../assets/img/photos/g6.jpg"
-                            srcset="../../assets/img/photos/g6@2x.jpg 2x"
+                            srcSet="../../assets/img/photos/g6@2x.jpg 2x"
                             alt="image"
                           />
                         </figure>
@@ -1204,7 +1204,7 @@ export default function About() {
                           <img
                             className="!rounded-[50%] !w-[3.5rem]"
                             src="../../assets/img/avatars/te1.jpg"
-                            srcset="../../assets/img/avatars/te1@2x.jpg 2x"
+                            srcSet="../../assets/img/avatars/te1@2x.jpg 2x"
                             alt="image"
                           />
                           <div className="info pl-4">
@@ -1240,7 +1240,7 @@ export default function About() {
                           <img
                             className="!rounded-[50%] !w-[3.5rem]"
                             src="../../assets/img/avatars/te2.jpg"
-                            srcset="../../assets/img/avatars/te2@2x.jpg 2x"
+                            srcSet="../../assets/img/avatars/te2@2x.jpg 2x"
                             alt="image"
                           />
                           <div className="info pl-4">
@@ -1275,7 +1275,7 @@ export default function About() {
                           <img
                             className="!rounded-[50%] !w-[3.5rem]"
                             src="../../assets/img/avatars/te3.jpg"
-                            srcset="../../assets/img/avatars/te3@2x.jpg 2x"
+                            srcSet="../../assets/img/avatars/te3@2x.jpg 2x"
                             alt="image"
                           />
                           <div className="info pl-4">
@@ -1308,7 +1308,7 @@ export default function About() {
                           <img
                             className="!rounded-[50%] !w-[3.5rem]"
                             src="../../assets/img/avatars/te4.jpg"
-                            srcset="../../assets/img/avatars/te4@2x.jpg 2x"
+                            srcSet="../../assets/img/avatars/te4@2x.jpg 2x"
                             alt="image"
                           />
                           <div className="info pl-4">
@@ -1342,7 +1342,7 @@ export default function About() {
                           <img
                             className="!rounded-[50%] !w-[3.5rem]"
                             src="../../assets/img/avatars/te5.jpg"
-                            srcset="../../assets/img/avatars/te5@2x.jpg 2x"
+                            srcSet="../../assets/img/avatars/te5@2x.jpg 2x"
                             alt="image"
                           />
                           <div className="info pl-4">
@@ -1376,7 +1376,7 @@ export default function About() {
                           <img
                             className="!rounded-[50%] !w-[3.5rem]"
                             src="../../assets/img/avatars/te6.jpg"
-                            srcset="../../assets/img/avatars/te6@2x.jpg 2x"
+                            srcSet="../../assets/img/avatars/te6@2x.jpg 2x"
                             alt="image"
                           />
                           <div className="info pl-4">
@@ -1419,7 +1419,7 @@ export default function About() {
                   <img
                     className="w-full max-w-full !h-auto"
                     src="../../assets/img/photos/co1.png"
-                    srcset="../../assets/img/photos/co1@2x.png 2x"
+                    srcSet="../../assets/img/photos/co1@2x.png 2x"
                     alt="image"
                   />
                 </figure>
@@ -1525,7 +1525,7 @@ export default function About() {
                     <img
                       className="w-full max-w-full !h-auto"
                       src="../../assets/img/photos/co2.png"
-                      srcset="../../assets/img/photos/co2@2x.png 2x"
+                      srcSet="../../assets/img/photos/co2@2x.png 2x"
                       alt="image"
                     />
                   </figure>
@@ -1814,7 +1814,7 @@ export default function About() {
                             <img
                               className="!rounded-[50%] !w-[3.5rem]"
                               src="../../assets/img/avatars/te1.jpg"
-                              srcset="../../assets/img/avatars/te1@2x.jpg 2x"
+                              srcSet="../../assets/img/avatars/te1@2x.jpg 2x"
                               alt="image"
                             />
                             <div className="info pl-4">
@@ -1841,7 +1841,7 @@ export default function About() {
                             <img
                               className="!rounded-[50%] !w-[3.5rem]"
                               src="../../assets/img/avatars/te2.jpg"
-                              srcset="../../assets/img/avatars/te2@2x.jpg 2x"
+                              srcSet="../../assets/img/avatars/te2@2x.jpg 2x"
                               alt="image"
                             />
                             <div className="info pl-4">
@@ -1868,7 +1868,7 @@ export default function About() {
                             <img
                               className="!rounded-[50%] !w-[3.5rem]"
                               src="../../assets/img/avatars/te3.jpg"
-                              srcset="../../assets/img/avatars/te3@2x.jpg 2x"
+                              srcSet="../../assets/img/avatars/te3@2x.jpg 2x"
                               alt="image"
                             />
                             <div className="info pl-4">
@@ -2407,7 +2407,7 @@ export default function About() {
                     <div className="img-mask mask-3">
                       <img
                         src="../../assets/img/photos/about28.jpg"
-                        srcset="../../assets/img/photos/about28@2x.jpg 2x"
+                        srcSet="../../assets/img/photos/about28@2x.jpg 2x"
                         alt="image"
                       />
                     </div>
@@ -2946,20 +2946,7 @@ export default function About() {
           />
         </svg>
       </div>
-      <Script
-        src="/assets/js/plugins.js" // Ruta al archivo JavaScript
-        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
-        onLoad={() => {
-          console.log("El script plugins.js se ha cargado.");
-        }}
-      />
-      <Script
-        src="/assets/js/theme.js" // Ruta al archivo JavaScript
-        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
-        onLoad={() => {
-          console.log("El script plugins.js se ha cargado.");
-        }}
-      />
+      <ScriptComponent />
     </>
   );
 }

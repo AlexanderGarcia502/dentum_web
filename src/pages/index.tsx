@@ -1,10 +1,12 @@
-import Script from "next/script";
-import Link from 'next/link';
+import Link from "next/link";
 import "../../public/assets/fonts/unicons/unicons.css";
 import "../../public/assets/css/plugins.css";
 import "../../public/assets/css/style.css";
 import "../../public/assets/css/colors/navy.css";
 import Foother from "@/components/foother/Foother";
+import Image from "next/image";
+import { ScriptComponent } from "@/utils/Scripts";
+import { Information } from "@/interfaces/enums/information";
 
 export default function Home() {
   return (
@@ -25,7 +27,7 @@ export default function Home() {
               <div className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
                 <div className="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
                   <h3 className="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">
-                    Sandbox
+                    Dentum
                   </h3>
                   <button
                     type="button"
@@ -149,8 +151,20 @@ export default function Home() {
 
         <section
           className="wrapper image-wrapper bg-cover bg-image bg-xs-none bg-[rgba(246,247,249,1)] bg-[center_center] bg-no-repeat bg-scroll relative z-0 xsm:!bg-none md:min-h-[25rem] sm:min-h-[20rem] xsm:min-h-[20rem]"
-          data-image-src="/assets/img/photos/bg37.jpg"
+          data-image-src="/assets/img/cover5.jpg"
         >
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(255,255,255,.5)",
+              position: "absolute",
+              marginBottom: "0px",
+              marginTop: "0px",
+              marginLeft: "0px",
+              marginRight: "0px",
+            }}
+          ></div>
           <div className="container pt-28 pb-20 sm:!py-28 xxl:!py-40">
             <div className="flex flex-wrap mx-[-15px] justify-center">
               <div
@@ -169,7 +183,10 @@ export default function Home() {
                 <div>
                   <a
                     href="#"
-                    className="btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                    className="btn btn-lg btn-navy text-white  border-[#000] hover:text-white hover:bg-[#000] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                    style={{
+                      background: "#000",
+                    }}
                   >
                     Contáctanos
                   </a>
@@ -214,13 +231,14 @@ export default function Home() {
               >
                 <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
                   <div className="!relative">
-                    <div className="card">
+                    <div className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden">
                       <figure className="card-img-top">
-                        <img
-                          className="max-w-full h-auto"
-                          src="../../assets/img/avatars/t1.jpg"
-                          srcSet="../../assets/img/avatars/t1@2x.jpg 2x"
-                          alt="image"
+                        <Image
+                          src={"/assets/img/prevent.jpg"}
+                          width={600}
+                          height={300}
+                          className="object-cover w-full h-full"
+                          alt="Odontología Preventiva"
                         />
                       </figure>
                       <div className="card-body px-6 py-5">
@@ -241,13 +259,14 @@ export default function Home() {
                 {/* <!--/column --> */}
                 <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
                   <div className="!relative">
-                    <div className="card">
+                    <div className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden">
                       <figure className="card-img-top">
-                        <img
-                          className="max-w-full h-auto"
-                          src="../../assets/img/avatars/t2.jpg"
-                          srcSet="../../assets/img/avatars/t2@2x.jpg 2x"
-                          alt="image"
+                        <Image
+                          src={"/assets/img/stetic.jpg"}
+                          width={600}
+                          height={300}
+                          className="object-cover w-full h-full"
+                          alt="Estética Dental"
                         />
                       </figure>
                       <div className="card-body px-6 py-5">
@@ -268,13 +287,14 @@ export default function Home() {
                 {/* <!--/column --> */}
                 <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
                   <div className="!relative">
-                    <div className="card">
+                    <div className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden">
                       <figure className="card-img-top">
-                        <img
-                          className="max-w-full h-auto"
-                          src="../../assets/img/avatars/t3.jpg"
-                          srcSet="../../assets/img/avatars/t3@2x.jpg 2x"
-                          alt="image"
+                        <Image
+                          src={"/assets/img/orthodontic1.jpg"}
+                          width={600}
+                          height={300}
+                          className="object-cover w-full h-full"
+                          alt="Servicio de Ortodoncia"
                         />
                       </figure>
                       <div className="card-body px-6 py-5">
@@ -296,7 +316,10 @@ export default function Home() {
               <div className="mt-12">
                 <a
                   href="#"
-                  className="btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                  className="btn btn-lg btn-navy text-white !bg-[#000] border-[#000] hover:text-white  hover:border-[#000] focus:shadow-[rgba(0,0,0,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                  style={{
+                    background: "#000",
+                  }}
                 >
                   Ver más servicios
                 </a>
@@ -319,9 +342,9 @@ export default function Home() {
               <div className="md:w-8/12 lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full !mx-auto mt-[50px]">
                 <img
                   className="w-full max-w-full !h-auto"
-                  src="/assets/img/photos/co1.png"
-                  srcSet="/assets/img/photos/co1@2x.png 2x"
-                  alt="image"
+                  src="/assets/img/dentum/doctors.jpeg"
+                  srcSet="/assets/img/dentum/doctors.jpeg 2x"
+                  alt="Dr Esdras y Dra Cecy"
                 />
               </div>
               {/* <!--/column --> */}
@@ -334,39 +357,34 @@ export default function Home() {
                 }}
               >
                 <h2 className="text-[calc(1.345rem_+_1.14vw)] font-bold !leading-[1.25] xl:text-[2.2rem] !mb-3">
-                  Dr. Esdras
+                  Nuestros Especialistas
                 </h2>
                 <p>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor
-                  ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus
-                  ac cursus commodo, tortor mauris condimentum nibh ut fermentum
-                  massa justo sit amet risus.
+                  En Dentum, contamos con un equipo de expertos dedicados a
+                  brindarte la mejor atención para el cuidado de tu sonrisa.
                 </p>
                 <p>
-                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-                  venenatis vestibulum. Aenean lacinia bibendum nulla sed
-                  consectetur.
+                  👨‍⚕️ Dr. Esdras – Cirujano Dentista y Ortodoncista Con más de 10
+                  años de experiencia en odontología, el Dr. Esdras es
+                  especialista en ortodoncia, con formación en Colombia. Su
+                  enfoque en la estética y funcionalidad dental permite a los
+                  pacientes lograr una sonrisa armónica y saludable.
                 </p>
                 <p>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor
-                  ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus
-                  ac cursus commodo, tortor mauris condimentum nibh ut fermentum
-                  massa justo sit amet risus.
+                  👩‍⚕️ Dra. Cesia Hoajaca – Odontopediatra Especialista en la
+                  salud bucal infantil, la Dra. Cesia Hoajaca se enfoca en
+                  brindar una experiencia amigable y segura para los más
+                  pequeños. Su dedicación y paciencia garantizan una atención de
+                  calidad para la sonrisa de tus hijos.
                 </p>
-                <p>
-                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-                  venenatis vestibulum. Aenean lacinia bibendum nulla sed
-                  consectetur.
-                </p>
-                <p>
-                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-                  venenatis vestibulum. Aenean lacinia bibendum nulla sed
-                  consectetur.
-                </p>
+
                 <div className="w-full">
                   <a
                     href="#"
-                    className="btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                    className="btn btn-lg btn-navy text-white !bg-[#000] border-[#000] hover:text-white  hover:border-[#000] focus:shadow-[rgba(0,0,0,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                    style={{
+                      background: "#000",
+                    }}
                   >
                     Leer más
                     <i className="uil uil-arrow-up-right ml-[.3rem] before:content-['\e950']"></i>
@@ -438,7 +456,7 @@ export default function Home() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="/assets/img/avatars/te1.jpg"
-                                  srcset="/assets/img/avatars/te1@2x.jpg 2x"
+                                  srcSet="/assets/img/avatars/te1@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -471,7 +489,7 @@ export default function Home() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="/assets/img/avatars/te2.jpg"
-                                  srcset="/assets/img/avatars/te2@2x.jpg 2x"
+                                  srcSet="/assets/img/avatars/te2@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -504,7 +522,7 @@ export default function Home() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="/assets/img/avatars/te3.jpg"
-                                  srcset="/assets/img/avatars/te3@2x.jpg 2x"
+                                  srcSet="/assets/img/avatars/te3@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -537,7 +555,7 @@ export default function Home() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="/assets/img/avatars/te4.jpg"
-                                  srcset="/assets/img/avatars/te4@2x.jpg 2x"
+                                  srcSet="/assets/img/avatars/te4@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -570,7 +588,7 @@ export default function Home() {
                                 <img
                                   className="!rounded-[50%] !w-[3.5rem]"
                                   src="/assets/img/avatars/te5.jpg"
-                                  srcset="/assets/img/avatars/te5@2x.jpg 2x"
+                                  srcSet="/assets/img/avatars/te5@2x.jpg 2x"
                                   alt="image"
                                 />
                                 <div className="info pl-4">
@@ -602,7 +620,7 @@ export default function Home() {
         {/** Testimonials finish */}
 
         {/** Contact init */}
-        <div class="container pb-12">
+        <div className="container pb-12">
           <div className="flex flex-wrap mx-[-15px]">
             <div className="xl:w-8/12 xl:!ml-[16.66666667%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] px-[15px] max-w-full">
               <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 !text-center">
@@ -613,7 +631,7 @@ export default function Home() {
                 className="contact-form needs-validation"
                 method="post"
                 action="./assets/php/contact.php"
-                novalidate
+                noValidate
               >
                 <div className="messages"></div>
                 <div className="flex flex-wrap mx-[-10px]">
@@ -698,7 +716,7 @@ export default function Home() {
                         placeholder="85489723"
                         required
                         pattern="[0-9]{8}"
-                        maxLength="13"
+                        maxLength={8}
                       />
                       <label
                         htmlFor="form_phone"
@@ -747,7 +765,10 @@ export default function Home() {
                     <div>
                       <a
                         href="#"
-                        className="btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                        className="btn btn-lg btn-navy text-white !bg-[#000] border-[#000] hover:text-white  hover:border-[#000] focus:shadow-[rgba(0,0,0,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
+                        style={{
+                          background: "#000",
+                        }}
                       >
                         Enviar
                       </a>
@@ -777,27 +798,27 @@ export default function Home() {
                   Nuestras Ubicaciones
                 </h2>
                 <p className="lead leading-[1.65] text-[0.9rem] font-medium !text-center mb-10"></p>
-                <ul class="nav nav-tabs nav-tabs-basic">
-                  <li class="nav-item">
+                <ul className="nav nav-tabs nav-tabs-basic">
+                  <li className="nav-item">
                     {" "}
                     <a
-                      class="nav-link active"
+                      className="nav-link active"
                       data-bs-toggle="tab"
                       href="#tab3-1"
                     >
                       Chimaltenango
                     </a>{" "}
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     {" "}
-                    <a class="nav-link" data-bs-toggle="tab" href="#tab3-2">
+                    <a className="nav-link" data-bs-toggle="tab" href="#tab3-2">
                       Sacatepequez
                     </a>{" "}
                   </li>
                 </ul>
                 {/* <!-- /.nav-tabs --> */}
-                <div class="tab-content mt-0">
-                  <div class="tab-pane fade show active" id="tab3-1">
+                <div className="tab-content mt-0">
+                  <div className="tab-pane fade show active" id="tab3-1">
                     <div className="flex flex-wrap mx-0">
                       <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] max-w-full !self-stretch">
                         <div className="map map-full rounded-t-[0.4rem] rounded-lg-start h-full min-h-[15rem]">
@@ -808,7 +829,7 @@ export default function Home() {
                               height: "100%",
                               border: "0",
                             }}
-                            allowfullscreen
+                            allowFullScreen
                           ></iframe>
                         </div>
                         {/* <!-- /.map --> */}
@@ -823,11 +844,11 @@ export default function Home() {
                               </div>
                             </div>
                             <div className="!self-start !justify-start">
-                              <h5 className="!mb-1">Address</h5>
+                              <h5 className="!mb-1">Dirección</h5>
                               <address className=" not-italic leading-[inherit] mb-4">
-                                Moonshine St. 14/05 Light City,{" "}
+                                3 Avenida 3-03, Chimaltenango 04001,{" "}
                                 <br className="hidden xl:block lg:block md:block" />
-                                London, United Kingdom
+                                Chimalenango, Guatemala
                               </address>
                             </div>
                           </div>
@@ -839,10 +860,9 @@ export default function Home() {
                               </div>
                             </div>
                             <div>
-                              <h5 className="!mb-1">Phone</h5>
+                              <h5 className="!mb-1">Teléfono</h5>
                               <p>
-                                00 (123) 456 78 90 <br />
-                                00 (987) 654 32 10
+                                (502) 5565 - 7921 <br />
                               </p>
                             </div>
                           </div>
@@ -860,15 +880,7 @@ export default function Home() {
                                   href="mailto:sandbox@email.com"
                                   className="text-[#60697b]"
                                 >
-                                  sandbox@email.com
-                                </a>
-                              </p>
-                              <p className="!mb-0">
-                                <a
-                                  href="mailto:help@sandbox.com"
-                                  className="text-[#60697b]"
-                                >
-                                  help@sandbox.com
+                                  {Information.EMAIL}
                                 </a>
                               </p>
                             </div>
@@ -881,7 +893,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* <!--/.tab-pane --> */}
-                  <div class="tab-pane fade" id="tab3-2">
+                  <div className="tab-pane fade" id="tab3-2">
                     <div className="flex flex-wrap mx-0">
                       <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] max-w-full !self-stretch">
                         <div className="map map-full rounded-t-[0.4rem] rounded-lg-start h-full min-h-[15rem]">
@@ -892,7 +904,7 @@ export default function Home() {
                               height: "100%",
                               border: "0",
                             }}
-                            allowfullscreen
+                            allowFullScreen
                           ></iframe>
                         </div>
                         {/* <!-- /.map --> */}
@@ -907,11 +919,12 @@ export default function Home() {
                               </div>
                             </div>
                             <div className="!self-start !justify-start">
-                              <h5 className="!mb-1">Address</h5>
+                              <h5 className="!mb-1">Dirección</h5>
                               <address className=" not-italic leading-[inherit] mb-4">
-                                Moonshine St. 14/05 Light City,{" "}
+                                Km 29.9 Carretera Interamericana San Lucas
+                                Sacatepequez,{" "}
                                 <br className="hidden xl:block lg:block md:block" />
-                                London, United Kingdom
+                                Sacatepequez, Guatemala
                               </address>
                             </div>
                           </div>
@@ -923,10 +936,9 @@ export default function Home() {
                               </div>
                             </div>
                             <div>
-                              <h5 className="!mb-1">Phone</h5>
+                              <h5 className="!mb-1">Teléfono</h5>
                               <p>
-                                00 (123) 456 78 90 <br />
-                                00 (987) 654 32 10
+                                (502) 5565 - 7921 <br />
                               </p>
                             </div>
                           </div>
@@ -944,15 +956,7 @@ export default function Home() {
                                   href="mailto:sandbox@email.com"
                                   className="text-[#60697b]"
                                 >
-                                  sandbox@email.com
-                                </a>
-                              </p>
-                              <p className="!mb-0">
-                                <a
-                                  href="mailto:help@sandbox.com"
-                                  className="text-[#60697b]"
-                                >
-                                  help@sandbox.com
+                                  Dentum.gt@gmail.com
                                 </a>
                               </p>
                             </div>
@@ -998,20 +1002,7 @@ export default function Home() {
       </div>
       {/* <script src="./assets/js/plugins.js"></script> */}
       {/* <script src="./assets/js/theme.js"></script> */}
-      <Script
-        src="/assets/js/plugins.js" // Ruta al archivo JavaScript
-        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
-        onLoad={() => {
-          console.log("El script plugins.js se ha cargado.");
-        }}
-      />
-      <Script
-        src="/assets/js/theme.js" // Ruta al archivo JavaScript
-        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
-        onLoad={() => {
-          console.log("El script plugins.js se ha cargado.");
-        }}
-      />
+      <ScriptComponent />
     </div>
   );
 }

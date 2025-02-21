@@ -141,20 +141,6 @@ const Navbar = () => {
         </nav>
         {/* <!-- /.offcanvas --> */}
       </header>
-      <Script
-        src="/assets/js/plugins.js" // Ruta al archivo JavaScript
-        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
-        onLoad={() => {
-          console.log("El script plugins.js se ha cargado.");
-        }}
-      />
-      <Script
-        src="/assets/js/theme.js" // Ruta al archivo JavaScript
-        strategy="afterInteractive" // Cargar el script después de que el componente se haya montado
-        onLoad={() => {
-          console.log("El script plugins.js se ha cargado.");
-        }}
-      />
     </>
   );
 };

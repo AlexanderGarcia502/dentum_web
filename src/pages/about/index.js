@@ -1,5 +1,5 @@
 import Script from "next/script";
-import Link from 'next/link';
+import Link from "next/link";
 import "../../../public/assets/fonts/unicons/unicons.css";
 import "../../../public/assets/css/plugins.css";
 import "../../../public/assets/css/style.css";
@@ -281,9 +281,7 @@ export default function About() {
               </div>
               {/* <!--/column --> */}
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-                <div
-                  className="w-full flex-[0_0_auto] px-[15px] max-w-full"
-                >
+                <div className="w-full flex-[0_0_auto] px-[15px] max-w-full">
                   <img
                     src="/assets/img/icons/lineal/list.svg"
                     className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4 m-[0_auto]"
@@ -297,15 +295,16 @@ export default function About() {
                   Aenean eu leo quam. Pellentesque ornare sem lacinia quam
                   venenatis vestibulum. Etiam porta sem malesuada magna mollis
                   euismod. Nullam id dolor id nibh ultricies vehicula ut id
-                  elit. <br /> <br /> Nullam quis risus eget urna mollis ornare. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit. Vestibulum id
-                  ligula porta felis euismod semper. Aenean lacinia bibendum
-                  nulla sed consectetur. Sed posuere consectetur est at
-                  lobortis. Vestibulum id ligula porta felis. <br /> <br /> Aenean eu leo
-                  quam. Pellentesque ornare sem lacinia quam venenatis
-                  vestibulum. Etiam porta sem malesuada magna mollis euismod.
-                  Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam
-                  quis risus eget urna mollis ornare.Aenean eu leo quam.
+                  elit. <br /> <br /> Nullam quis risus eget urna mollis ornare.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Vestibulum id ligula porta felis euismod semper. Aenean
+                  lacinia bibendum nulla sed consectetur. Sed posuere
+                  consectetur est at lobortis. Vestibulum id ligula porta felis.{" "}
+                  <br /> <br /> Aenean eu leo quam. Pellentesque ornare sem
+                  lacinia quam venenatis vestibulum. Etiam porta sem malesuada
+                  magna mollis euismod. Nullam id dolor id nibh ultricies
+                  vehicula ut id elit. Nullam quis risus eget urna mollis
+                  ornare.Aenean eu leo quam.
                 </p>
               </div>
               {/* <!--/column --> */}
@@ -324,14 +323,13 @@ export default function About() {
                   alt="image"
                 />
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 xl:!px-[4.5rem] lg:!px-[4.5rem]">
-                Conozca al Equipo Detrás de su Sonrisa Perfecta
+                  Conozca al Equipo Detrás de su Sonrisa Perfecta
                 </h2>
               </div>
               {/* <!--/column --> */}
             </div>
             {/*<!--/.row -->*/}
             <div className="!relative">
-
               <div
                 className="swiper-container dots-closer !mb-6"
                 data-margin="0"
@@ -618,7 +616,7 @@ export default function About() {
             {/* <!-- /.relative --> */}
           </div>
           {/* <!-- /.container --> */}
-        </section>                                                                                                                                                                                                                                                                                               
+        </section>
         <section className="wrapper !bg-[#ffffff]  angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
           <div className="container pt-32 pb-[4.5rem] xl:pt-36 lg:pt-36 md:pt-36 xl:pb-24 lg:pb-24 md:pb-24">
             <div className="flex flex-wrap mx-[-15px] md:mx-[-20px] lg:mx-[-20px] xl:mx-[-35px] mt-[-50px] items-center">
@@ -634,9 +632,13 @@ export default function About() {
               </div>
               {/* <!--/column --> */}
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-              <img src="/assets/img/icons/lineal/telemarketer.svg" className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4" alt="image" />
+                <img
+                  src="/assets/img/icons/lineal/telemarketer.svg"
+                  className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
+                  alt="image"
+                />
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-8">
-                ¿Listo para una Sonrisa Espectacular? 
+                  ¿Listo para una Sonrisa Espectacular?
                 </h2>
                 <div className="flex flex-row">
                   <div>
@@ -647,7 +649,7 @@ export default function About() {
                   <div>
                     <h5 className="!mb-1">Dirección</h5>
                     <address className=" not-italic leading-[inherit] mb-4">
-                    3 Avenida 3-03, Chimaltenango 04001
+                      3 Avenida 3-03, Chimaltenango 04001
                       <br className="hidden xl:block lg:block md:block" />
                       Chimaltenango, Guatemala
                     </address>
@@ -662,7 +664,7 @@ export default function About() {
                   </div>
                   <div>
                     <h5 className="!mb-1">Teléfono</h5>
-                    <p>00 (123) 456 78 90</p>
+                    <p> (502) 5565 - 7921</p>
                   </div>
                 </div>
                 <div className="flex flex-row">

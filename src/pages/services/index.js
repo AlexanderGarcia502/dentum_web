@@ -10,104 +10,104 @@ export default function Services() {
   return (
     <>
       <div className="grow shrink-0">
-        <header class="relative wrapper bg-soft-primary !bg-[#edf2fc]">
-          <nav class="navbar navbar-expand-lg center-nav transparent !absolute navbar-dark xl:pt-[.3rem] lg:pt-[.3rem]">
-            <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center">
-              <div class="navbar-brand w-full">
+        <header className="relative wrapper bg-soft-primary !bg-[#edf2fc]">
+          <nav className="navbar navbar-expand-lg center-nav transparent !absolute navbar-dark xl:pt-[.3rem] lg:pt-[.3rem]">
+            <div className="container xl:flex-row lg:flex-row !flex-nowrap items-center">
+              <div className="navbar-brand w-full">
                 <a href="./index.html">
                   <img
-                    class="logo-dark"
+                    className="logo-dark"
                     src="./assets/img/logo.png"
-                    srcset="./assets/img/logo@2x.png 2x"
+                    srcSet="./assets/img/logo@2x.png 2x"
                     alt="image"
                   />
                   <img
-                    class="logo-light"
+                    className="logo-light"
                     src="./assets/img/logo-light.png"
-                    srcset="./assets/img/logo-light@2x.png 2x"
+                    srcSet="./assets/img/logo-light@2x.png 2x"
                     alt="image"
                   />
                 </a>
               </div>
-              <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-                <div class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
-                  <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">
+              <div className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                <div className="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
+                  <h3 className="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">
                     Sandbox
                   </h3>
                   <button
                     type="button"
-                    class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
+                    className="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <Link class="nav-link" href="/">
+                <div className="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/">
                         Inicio
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link class="nav-link" href="/about">
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/about">
                         Sobre nosotros
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link class="nav-link" href="/services">
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/services">
                         Servicios
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link class="nav-link" href="/testimonials">
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/testimonials">
                         Testimonios
                       </Link>
                     </li>
-                    <li class="nav-item">
-                      <Link class="nav-link" href="/contact">
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/contact">
                         Contáctanos
                       </Link>
                     </li>
                   </ul>
-                  <div class="offcanvas-footer xl:hidden lg:hidden">
+                  <div className="offcanvas-footer xl:hidden lg:hidden">
                     <div>
                       <a
                         href="mailto:first.last@email.com"
-                        class="link-inverse"
+                        className="link-inverse"
                       >
                         info@email.com
                       </a>
                       <br /> 00 (123) 456 78 90 <br />
-                      <nav class="nav social social-white mt-4">
+                      <nav className="nav social social-white mt-4">
                         <a
-                          class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
                           href="#"
                         >
-                          <i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i>
+                          <i className="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i>
                         </a>
                         <a
-                          class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
                           href="#"
                         >
-                          <i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i>
+                          <i className="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i>
                         </a>
                         <a
-                          class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
                           href="#"
                         >
-                          <i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i>
+                          <i className="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i>
                         </a>
                         <a
-                          class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
                           href="#"
                         >
-                          <i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i>
+                          <i className="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i>
                         </a>
                         <a
-                          class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
                           href="#"
                         >
-                          <i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i>
+                          <i className="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i>
                         </a>
                       </nav>
                       {/* <!-- /.social --> */}
@@ -161,7 +161,7 @@ export default function Services() {
             <div className="flex flex-wrap mx-[-15px] !text-center">
               <div className="md:w-10/12 lg:w-9/12 xl:w-9/12 xxl:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
                 <h3 className="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.25] tracking-[-0.03em] mb-7 xl:!px-12">
-                Nuestros Servicios Dentales
+                  Nuestros Servicios Dentales
                 </h3>
                 <p className="text-[1rem] tracking-[-0.03em]">
                   En DENTUM, brindamos atención dental de calidad y construimos
@@ -433,7 +433,7 @@ export default function Services() {
                   <img
                     className="w-auto"
                     src="./assets/img/illustrations/i8.png"
-                    srcset="./assets/img/illustrations/i8@2x.png 2x"
+                    srcSet="./assets/img/illustrations/i8@2x.png 2x"
                     alt="image"
                   />
                 </figure>
@@ -446,14 +446,13 @@ export default function Services() {
         </section>
         <section className="wrapper !bg-[#ffffff]">
           <div className="container">
-          
             <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
               <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
                 <figure className="m-0 p-0">
                   <img
                     className="w-auto"
                     src="./assets/img/illustrations/i7.png"
-                    srcset="./assets/img/illustrations/i7@2x.png 2x"
+                    srcSet="./assets/img/illustrations/i7@2x.png 2x"
                     alt="image"
                   />
                 </figure>
