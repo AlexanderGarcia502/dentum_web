@@ -83,6 +83,9 @@ hr {
   border-top-width: 1px;
   /* 3 */
 }
+cite::before {
+  content: "\2014 ";
+}
 
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
@@ -7845,7 +7848,8 @@ blockquote.dropdown-item {
   font-size: 0.8rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(52 63 82 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  cursor: pointer;
   transition-property: color;
   transition-duration: 150ms;
   transition-duration: 0.2s;

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import "../../public/assets/fonts/unicons/unicons.css";
 import "../../public/assets/css/plugins.css";
 import "../../public/assets/css/style.css";
@@ -7,148 +6,17 @@ import Foother from "@/components/foother/Foother";
 import Image from "next/image";
 import { ScriptComponent } from "@/utils/Scripts";
 import { Information } from "@/interfaces/enums/information";
+import { Header } from "@/components/header";
+import { testimonies } from "@/utils/testimonies";
+import { TestimonyCard } from "@/components/card/Testimony";
 
 export default function Home() {
   return (
     <div>
       <div className="grow shrink-0">
-        <header className="relative wrapper !bg-[#ffffff] ">
-          <nav className="navbar navbar-expand-lg classic transparent !absolute navbar-light">
-            <div className="container xl:flex-row lg:flex-row !flex-nowrap items-center">
-              <div className="navbar-brand w-full">
-                <a href="./index.html">
-                  <img
-                    src="/assets/img/logo-dark.png"
-                    srcSet="/assets/img/logo-dark@2x.png 2x"
-                    alt="image"
-                  />
-                </a>
-              </div>
-              <div className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-                <div className="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
-                  <h3 className="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">
-                    Dentum
-                  </h3>
-                  <button
-                    type="button"
-                    className="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div className="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
-                  <ul className="navbar-nav">
-                    <li className="nav-item dropdown dropdown-mega">
-                      <Link
-                        className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
-                        href="/"
-                      >
-                        Inicio
-                      </Link>
-                    </li>
-                    <li className="nav-item dropdown">
-                      <Link
-                        className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
-                        href="/about"
-                      >
-                        Sobre nosotros
-                      </Link>
-                    </li>
-                    <li className="nav-item dropdown">
-                      <Link
-                        className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
-                        href="/services"
-                      >
-                        Servicios
-                      </Link>
-                    </li>
-                    <li className="nav-item dropdown">
-                      <Link
-                        className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
-                        href="/testimonials"
-                      >
-                        Testimonios
-                      </Link>
-                    </li>
-                    <li className="nav-item dropdown dropdown-mega">
-                      <Link
-                        className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
-                        href="/contact"
-                      >
-                        Contáctanos
-                      </Link>
-                      {/* <!--/.dropdown-menu --> */}
-                    </li>
-                  </ul>
-                  {/* <!-- /.navbar-nav --> */}
-                  <div className="offcanvas-footer xl:hidden lg:hidden">
-                    <div>
-                      <a
-                        href="mailto:first.last@email.com"
-                        className="link-inverse"
-                      >
-                        info@email.commmm
-                      </a>
-                      <br /> 00 (123) 456 78 90 <br />
-                      <nav className="nav social social-white mt-4">
-                        <a
-                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                          href="#"
-                        >
-                          <i className="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i>
-                        </a>
-                        <a
-                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                          href="#"
-                        >
-                          <i className="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i>
-                        </a>
-                        <a
-                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                          href="#"
-                        >
-                          <i className="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i>
-                        </a>
-                        <a
-                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                          href="#"
-                        >
-                          <i className="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i>
-                        </a>
-                        <a
-                          className="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
-                          href="#"
-                        >
-                          <i className="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i>
-                        </a>
-                      </nav>
-                      {/* <!-- /.social --> */}
-                    </div>
-                  </div>
-                  {/* <!-- /.offcanvas-footer --> */}
-                </div>
-                {/* <!-- /.offcanvas-body --> */}
-              </div>
-              {/* <!-- /.navbar-collapse --> */}
-              <div className="navbar-other lg:!ml-4 xl:!ml-4">
-                <ul className="navbar-nav !flex-row !items-center !ml-auto">
-                  <li className="nav-item xl:hidden lg:hidden">
-                    <button className="hamburger offcanvas-nav-btn">
-                      <span></span>
-                    </button>
-                  </li>
-                </ul>
-                {/* <!-- /.navbar-nav --> */}
-              </div>
-              {/* <!-- /.navbar-other --> */}
-            </div>
-            {/* <!-- /.container --> */}
-          </nav>
-          {/* <!-- /.offcanvas --> */}
-        </header>
         {/* <!-- /header --> */}
         {/**  Cover init  */}
-
+        <Header />
         <section
           className="wrapper image-wrapper bg-cover bg-image bg-xs-none bg-[rgba(246,247,249,1)] bg-[center_center] bg-no-repeat bg-scroll relative z-0 xsm:!bg-none md:min-h-[25rem] sm:min-h-[20rem] xsm:min-h-[20rem]"
           data-image-src="/assets/img/cover5.jpg"
@@ -231,7 +99,12 @@ export default function Home() {
               >
                 <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
                   <div className="!relative">
-                    <div className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden">
+                    <div
+                      className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden"
+                      style={{
+                        height: "500px",
+                      }}
+                    >
                       <figure className="card-img-top">
                         <Image
                           src={"/assets/img/prevent.jpg"}
@@ -259,7 +132,12 @@ export default function Home() {
                 {/* <!--/column --> */}
                 <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
                   <div className="!relative">
-                    <div className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden">
+                    <div
+                      className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden"
+                      style={{
+                        height: "500px",
+                      }}
+                    >
                       <figure className="card-img-top">
                         <Image
                           src={"/assets/img/stetic.jpg"}
@@ -287,7 +165,12 @@ export default function Home() {
                 {/* <!--/column --> */}
                 <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
                   <div className="!relative">
-                    <div className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden">
+                    <div
+                      className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden"
+                      style={{
+                        height: "500px",
+                      }}
+                    >
                       <figure className="card-img-top">
                         <Image
                           src={"/assets/img/orthodontic1.jpg"}
@@ -414,7 +297,7 @@ export default function Home() {
             </p>
             <div className="!relative">
               {/** Adornos inicio */}
-              {/*<div
+              {/* <div
                 className="shape !rounded-[50%] !bg-[#fff8ee] rellax !w-[6rem] !h-[6rem] absolute z-[1]"
                 data-rellax-speed="1"
                 style={{
@@ -430,9 +313,10 @@ export default function Home() {
                   left: "-1.7rem",
                 }}
               ></div> */}
+
               {/** Adornos fin */}
               <div
-                className="swiper-container dots-closer !mb-6 relative z-10"
+                className="swiper-container dots-closer blog grid-view !mb-6"
                 data-margin="0"
                 data-dots="true"
                 data-items-xl="3"
@@ -441,170 +325,19 @@ export default function Home() {
               >
                 <div className="swiper">
                   <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="item-inner">
-                        <div className="card">
-                          <div className="card-body flex-[1_1_auto] p-[40px]">
-                            <blockquote className="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                              <p>
-                                “Vivamus sagittis lacus vel augue laoreet rutrum
-                                faucibus dolor auctor. Vestibulum id ligula
-                                porta felis euismod semper. Cras justo odio
-                                dapibus facilisis sociis natoque penatibus.”
-                              </p>
-                              <div className="flex items-center text-left">
-                                <img
-                                  className="!rounded-[50%] !w-[3.5rem]"
-                                  src="/assets/img/avatars/te1.jpg"
-                                  srcSet="/assets/img/avatars/te1@2x.jpg 2x"
-                                  alt="image"
-                                />
-                                <div className="info pl-4">
-                                  <h5 className="!mb-1 text-[.95rem] !leading-[1.5]">
-                                    Coriss Ambady
-                                  </h5>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          {/* <!-- /.card-body --> */}
+                    {testimonies.map(({ content, name }, index) => (
+                      <div
+                        className="swiper-slide"
+                        key={`testimony-${name}-${index}`}
+                      >
+                        <div className="item-inner">
+                          <TestimonyCard content={content} name={name} />
+                          {/* <!-- /.card --> */}
                         </div>
-                        {/* <!-- /.card --> */}
+                        {/* <!-- /.item-inner --> */}
                       </div>
-                      {/* <!-- /.item-inner --> */}
-                    </div>
-                    {/* <!--/.swiper-slide --> */}
-                    <div className="swiper-slide">
-                      <div className="item-inner">
-                        <div className="card">
-                          <div className="card-body flex-[1_1_auto] p-[40px]">
-                            <blockquote className="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                              <p>
-                                “Vivamus sagittis lacus vel augue laoreet rutrum
-                                faucibus dolor auctor. Vestibulum id ligula
-                                porta felis euismod semper. Cras justo odio
-                                dapibus facilisis sociis natoque penatibus.”
-                              </p>
-                              <div className="flex items-center text-left">
-                                <img
-                                  className="!rounded-[50%] !w-[3.5rem]"
-                                  src="/assets/img/avatars/te2.jpg"
-                                  srcSet="/assets/img/avatars/te2@2x.jpg 2x"
-                                  alt="image"
-                                />
-                                <div className="info pl-4">
-                                  <h5 className="!mb-1 text-[.95rem] !leading-[1.5]">
-                                    Cory Zamora
-                                  </h5>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          {/* <!-- /.card-body --> */}
-                        </div>
-                        {/* <!-- /.card --> */}
-                      </div>
-                      {/* <!-- /.item-inner --> */}
-                    </div>
-                    {/* <!--/.swiper-slide --> */}
-                    <div className="swiper-slide">
-                      <div className="item-inner">
-                        <div className="card">
-                          <div className="card-body flex-[1_1_auto] p-[40px]">
-                            <blockquote className="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                              <p>
-                                “Vivamus sagittis lacus vel augue laoreet rutrum
-                                faucibus dolor auctor. Vestibulum id ligula
-                                porta felis euismod semper. Cras justo odio
-                                dapibus facilisis sociis natoque penatibus.”
-                              </p>
-                              <div className="flex items-center text-left">
-                                <img
-                                  className="!rounded-[50%] !w-[3.5rem]"
-                                  src="/assets/img/avatars/te3.jpg"
-                                  srcSet="/assets/img/avatars/te3@2x.jpg 2x"
-                                  alt="image"
-                                />
-                                <div className="info pl-4">
-                                  <h5 className="!mb-1 text-[.95rem] !leading-[1.5]">
-                                    Nikolas Brooten
-                                  </h5>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          {/* <!-- /.card-body --> */}
-                        </div>
-                        {/* <!-- /.card --> */}
-                      </div>
-                      {/* <!-- /.item-inner --> */}
-                    </div>
-                    {/* <!--/.swiper-slide --> */}
-                    <div className="swiper-slide">
-                      <div className="item-inner">
-                        <div className="card">
-                          <div className="card-body flex-[1_1_auto] p-[40px]">
-                            <blockquote className="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                              <p>
-                                “Vivamus sagittis lacus vel augue laoreet rutrum
-                                faucibus dolor auctor. Vestibulum id ligula
-                                porta felis euismod semper. Cras justo odio
-                                dapibus facilisis sociis natoque penatibus.”
-                              </p>
-                              <div className="flex items-center text-left">
-                                <img
-                                  className="!rounded-[50%] !w-[3.5rem]"
-                                  src="/assets/img/avatars/te4.jpg"
-                                  srcSet="/assets/img/avatars/te4@2x.jpg 2x"
-                                  alt="image"
-                                />
-                                <div className="info pl-4">
-                                  <h5 className="!mb-1 text-[.95rem] !leading-[1.5]">
-                                    Coriss Ambady
-                                  </h5>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          {/* <!-- /.card-body --> */}
-                        </div>
-                        {/* <!-- /.card --> */}
-                      </div>
-                      {/* <!-- /.item-inner --> */}
-                    </div>
-                    {/* <!--/.swiper-slide --> */}
-                    <div className="swiper-slide">
-                      <div className="item-inner">
-                        <div className="card">
-                          <div className="card-body flex-[1_1_auto] p-[40px]">
-                            <blockquote className="text-[0.85rem] leading-[1.7] font-medium pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                              <p>
-                                “Vivamus sagittis lacus vel augue laoreet rutrum
-                                faucibus dolor auctor. Vestibulum id ligula
-                                porta felis euismod semper. Cras justo odio
-                                dapibus facilisis sociis natoque penatibus.”
-                              </p>
-                              <div className="flex items-center text-left">
-                                <img
-                                  className="!rounded-[50%] !w-[3.5rem]"
-                                  src="/assets/img/avatars/te5.jpg"
-                                  srcSet="/assets/img/avatars/te5@2x.jpg 2x"
-                                  alt="image"
-                                />
-                                <div className="info pl-4">
-                                  <h5 className="!mb-1 text-[.95rem] !leading-[1.5]">
-                                    Jackie Sanders
-                                  </h5>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          {/* <!-- /.card-body --> */}
-                        </div>
-                        {/* <!-- /.card --> */}
-                      </div>
-                      {/* <!-- /.item-inner --> */}
-                    </div>
+                    ))}
+
                     {/* <!--/.swiper-slide --> */}
                   </div>
                   {/* <!--/.swiper-wrapper --> */}
@@ -823,12 +556,14 @@ export default function Home() {
                       <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] max-w-full !self-stretch">
                         <div className="map map-full rounded-t-[0.4rem] rounded-lg-start h-full min-h-[15rem]">
                           <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.918531471518!2d-90.81692506310931!3d14.660962492596031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85896dfc21477c29%3A0xf1c5cbf4aa638ab!2sCl%C3%ADnica%20Dental%20DENTUM%20-%20Chimaltenango!5e1!3m2!1ses-419!2sgt!4v1729148019856!5m2!1ses-419!2sgt"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.918531471518!2d-90.81692506310931!3d14.660962492596031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85896dfc21477c29%3A0xf1c5cbf4aa638ab!2sCl%C3%ADnica%20Dental%20DENTUM%20-%20Chimaltenango!5e0!3m2!1ses!2sgt!4v1729148019856!5m2!1ses!2sgt"
                             style={{
                               width: "100%",
                               height: "100%",
                               border: "0",
                             }}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allowFullScreen
                           ></iframe>
                         </div>
@@ -898,12 +633,14 @@ export default function Home() {
                       <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] max-w-full !self-stretch">
                         <div className="map map-full rounded-t-[0.4rem] rounded-lg-start h-full min-h-[15rem]">
                           <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4750.634598368484!2d-90.66647915773585!3d14.608576128184152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890b9d1c7d9c59%3A0xf91e4a1f8d0a41f6!2sCentro%20Dental%20San%20Lucas!5e1!3m2!1ses-419!2sgt!4v1729149727408!5m2!1ses-419!2sgt"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4750.634598368484!2d-90.66647915773585!3d14.608576128184152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890b9d1c7d9c59%3A0xf91e4a1f8d0a41f6!2sCentro%20Dental%20San%20Lucas!5e0!3m2!1ses!2sgt!4v1729149727408!5m2!1ses!2sgt"
                             style={{
                               width: "100%",
                               height: "100%",
                               border: "0",
                             }}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allowFullScreen
                           ></iframe>
                         </div>
