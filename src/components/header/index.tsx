@@ -55,44 +55,44 @@ export const Header = ({ solid }: { solid?: boolean }) => {
             <div className="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
               <ul className="navbar-nav">
                 <li className="nav-item dropdown dropdown-mega">
-                  <Link
+                  <a
                     className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#000] after:!text-[#605dba]"
                     href="/"
                   >
                     Inicio
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item dropdown">
-                  <Link
+                  <a
                     className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="/about"
                   >
                     Sobre nosotros
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item dropdown">
-                  <Link
+                  <a
                     className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="/services"
                   >
                     Servicios
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item dropdown">
-                  <Link
+                  <a
                     className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="/testimonials"
                   >
                     Testimonios
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item dropdown dropdown-mega">
-                  <Link
+                  <a
                     className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="/contact"
                   >
                     Contáctanos
-                  </Link>
+                  </a>
                   {/* <!--/.dropdown-menu --> */}
                 </li>
               </ul>
