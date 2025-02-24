@@ -1,7 +1,7 @@
 import { useScrollHeader } from "@/hooks/useScrollHeader";
 import Link from "next/link";
 
-export const Header = () => {
+export const Header = ({ solid }: { solid?: boolean }) => {
   const isHeaderVisible = useScrollHeader();
   return (
     <header
@@ -11,15 +11,16 @@ export const Header = () => {
           : "bg-white backdrop-blur-sm"
       }`}
       style={{
-        zIndex: 10000,
+        zIndex: 100000,
       }}
     >
       <nav
         className="navbar  navbar-expand-lg classic transparent !absolute navbar-light "
         style={{
-          backgroundColor: !isHeaderVisible
-            ? "rgba(255, 255, 255, 1)"
-            : "transparent",
+          backgroundColor:
+            !isHeaderVisible || solid
+              ? "rgba(255, 255, 255, 1)"
+              : "transparent",
           transition:
             "background-color 0.3s ease-in-out, opacity 0.3s ease-in-out",
           boxShadow: !isHeaderVisible ? "0 0 1px rgba(0,0,0,0.2)" : "none",
@@ -30,9 +31,12 @@ export const Header = () => {
           <div className="navbar-brand w-full">
             <a href="./index.html">
               <img
-                src="/assets/img/logo-dark.png"
-                srcSet="/assets/img/logo-dark@2x.png 2x"
+                src="/assets/img/dentum/logo.png"
+                srcSet="/assets/img/dentum/logo.png 2x"
                 alt="image"
+                style={{
+                  width: "150px",
+                }}
               />
             </a>
           </div>

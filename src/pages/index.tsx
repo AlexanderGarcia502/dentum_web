@@ -9,6 +9,7 @@ import { Information } from "@/interfaces/enums/information";
 import { Header } from "@/components/header";
 import { testimonies } from "@/utils/testimonies";
 import { TestimonyCard } from "@/components/card/Testimony";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -496,15 +497,7 @@ export default function Home() {
                       <strong>*</strong> These fields are required.
                     </p>
                     <div>
-                      <a
-                        href="#"
-                        className="btn btn-lg btn-navy text-white !bg-[#000] border-[#000] hover:text-white  hover:border-[#000] focus:shadow-[rgba(0,0,0,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52]"
-                        style={{
-                          background: "#000",
-                        }}
-                      >
-                        Enviar
-                      </a>
+                      <Button title="Enviar" />
                     </div>
                   </div>
                   {/* <!-- /column --> */}

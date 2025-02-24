@@ -13,9 +13,12 @@ const Foother = () => {
             <div className="widget">
               <img
                 className="!mb-4"
-                src="./assets/img/logo-dark.png"
-                srcSet="./assets/img/logo-dark@2x.png 2x"
+                src="./assets/img/dentum/logo.png"
+                srcSet="./assets/img/dentum/logo.png 2x"
                 alt="image"
+                style={{
+                  width: "150px",
+                }}
               />
               <p className="!mb-4">Tu sonrisa es nuestra prioridad</p>
               <nav className="nav social social-muted">
