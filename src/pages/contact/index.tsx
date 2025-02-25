@@ -1,5 +1,3 @@
-import Script from "next/script";
-import Link from "next/link";
 import "../../../public/assets/fonts/unicons/unicons.css";
 import "../../../public/assets/css/plugins.css";
 import "../../../public/assets/css/style.css";
@@ -7,6 +5,9 @@ import "../../../public/assets/css/colors/navy.css";
 import Foother from "@/components/foother/Foother";
 import { Header } from "@/components/header";
 import { ScriptComponent } from "@/utils/Scripts";
+import { Location } from "@/components/Location";
+import { Button } from "@/components/Button";
+import { Contacts } from "@/components/Contacts";
 
 export default function Contact() {
   return (
@@ -14,161 +15,51 @@ export default function Contact() {
       <div className="grow shrink-0">
         <Header />
         {/* <!-- /header --> */}
-        <section className="wrapper !bg-[#edf2fc]">
-          <div className="container pt-10 pb-36 xl:pt-[4.5rem] lg:pt-[4.5rem] md:pt-[4.5rem] xl:pb-40 lg:pb-40 md:pb-40 !text-center">
-            <div className="flex flex-wrap mx-[-15px]">
-              <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-6/12 xxl:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-                <h1 className="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] mb-3 text-[#343f52]">
-                  Get in Touch
-                </h1>
-                <nav className="inline-block" aria-label="breadcrumb">
-                  <ol className="breadcrumb  flex flex-wrap bg-[none] p-0 !rounded-none list-none mb-[20px]">
-                    <li className="breadcrumb-item flex text-[#60697b]">
-                      <a
-                        className="text-[#60697b] hover:text-[#3f78e0]"
-                        href="#"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li
-                      className="breadcrumb-item flex text-[#60697b] pl-2 before:font-normal before:flex before:items-center before:text-[rgba(96,105,123,.35)] before:content-['\e931'] before:text-[0.9rem] before:-mt-px before:pr-2 before:font-Unicons active"
-                      aria-current="page"
-                    >
-                      Contact
-                    </li>
-                  </ol>
-                </nav>
-                {/* <!-- /nav --> */}
-              </div>
-              {/* <!-- /column --> */}
+        <section
+          className="wrapper image-wrapper bg-image text-white bg-no-repeat bg-[center_center] bg-cover relative z-0 !bg-fixed pb-14 min-h-screen"
+          data-image-src="/assets/img/dentum/sucursal.png"
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              background: "rgba(255,255,255,0.5)",
+              bottom: 0,
+              left: 0,
+              right: 0,
+            }}
+          ></div>
+
+          <div className="py-14">
+            <div className="relative z-10 pt-14 w-full text-center flex items-center justify-center">
+              <h1 className="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] !mb-4 ">
+                Tu sonrisa es nuestra prioridad. ¡Contáctanos hoy!
+              </h1>
             </div>
-            {/* <!-- /.row --> */}
           </div>
-          {/* <!-- /.container --> */}
         </section>
+        <section>
+          <div>
+            <Contacts />
+          </div>
+        </section>
+
         {/* <!-- /section --> */}
         <section className="wrapper !bg-[#ffffff]  angled upper-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:border-y-transparent before:border-0 before:border-solid before:right-0 after:content-[''] after:block after:absolute after:z-0 after:border-y-transparent after:border-[#fefefe] after:border-0 after:border-solid after:right-0">
           <div className="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
+            <Location />
             <div className="flex flex-wrap mx-[-15px] mt-[-50px] xl:mx-[-35px] lg:mx-[-20px] mb-24 items-center">
-              <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full !relative">
-                <div
-                  className="shape bg-dot primary rellax !w-[8rem] !h-[8rem] absolute opacity-50  bg-[radial-gradient(#3f78e0_2px,transparent_2.5px)]"
-                  data-rellax-speed="1"
-                  style={{ top: "0", left: "-1.4rem", zIndex: 0 }}
-                ></div>
-                <div className="flex flex-wrap mx-[-15px] xl:mx-[-12.5px] lg:mx-[-12.5px] md:mx-[-12.5px] mt-[-25px]">
-                  <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[15px] xl:px-[12.5px] lg:px-[12.5px] md:px-[12.5px] mt-[25px] max-w-full">
-                    <figure className="rounded-[0.4rem] xl:!mt-10 lg:!mt-10 md:!mt-10 !relative">
-                      <img
-                        className="!rounded-[0.4rem]"
-                        src="./assets/img/photos/g5.jpg"
-                        srcSet="./assets/img/photos/g5@2x.jpg 2x"
-                        alt="image"
-                      />
-                    </figure>
-                  </div>
-                  {/* <!--/column --> */}
-                  <div className="xl:w-6/12 lg:w-6/12 md:w-6/12 w-full flex-[0_0_auto] px-[15px] xl:px-[12.5px] lg:px-[12.5px] md:px-[12.5px] mt-[25px] max-w-full">
-                    <div className="flex flex-wrap mx-[-15px] xl:mx-[-12.5px] lg:mx-[-12.5px] md:mx-[-12.5px] mt-[-25px]">
-                      <div className="w-full flex-[0_0_auto] px-[12.5px] mt-[25px] max-w-full xl:!order-2 lg:!order-2 md:!order-2">
-                        <figure className="rounded-[0.4rem]">
-                          <img
-                            className="!rounded-[0.4rem]"
-                            src="./assets/img/photos/g6.jpg"
-                            srcSet="./assets/img/photos/g6@2x.jpg 2x"
-                            alt="image"
-                          />
-                        </figure>
-                      </div>
-                      {/* <!--/column --> */}
-                      <div className="xl:w-10/12 lg:w-10/12 md:w-10/12 w-full flex-[0_0_auto] px-[12.5px] mt-[25px] max-w-full">
-                        <div className="card !bg-[#e0e9fa] !text-center counter-wrapper">
-                          <div className="card-body !py-12">
-                            <h3 className="counter !whitespace-nowrap xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] tracking-[normal] !leading-none mb-2">
-                              5000+
-                            </h3>
-                            <p className="!mb-0 text-[0.8rem] font-medium">
-                              Satisfied Customers
-                            </p>
-                          </div>
-                          {/* <!--/.card-body --> */}
-                        </div>
-                        {/* <!--/.card --> */}
-                      </div>
-                      {/* <!--/column --> */}
-                    </div>
-                    {/* <!--/.row --> */}
-                  </div>
-                  {/* <!--/column --> */}
-                </div>
-                {/* <!--/.row --> */}
-              </div>
               {/* <!--/column --> */}
-              <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-                <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-8">
-                  Convinced yet? Let's make something great together.
-                </h2>
-                <div className="flex flex-row">
-                  <div>
-                    <div className="icon text-[#3f78e0]  xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] mr-6 mt-[-0.25rem]">
-                      {" "}
-                      <i className="uil uil-location-pin-alt before:content-['\ebd8']"></i>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="!mb-1">Address</h5>
-                    <address className=" not-italic leading-[inherit] mb-4">
-                      Moonshine St. 14/05 Light City,{" "}
-                      <br className="hidden xl:block lg:block md:block" />
-                      London, United Kingdom
-                    </address>
-                  </div>
-                </div>
-                <div className="flex flex-row">
-                  <div>
-                    <div className="icon text-[#3f78e0]  xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] mr-6 mt-[-0.25rem]">
-                      {" "}
-                      <i className="uil uil-phone-volume before:content-['\ec50']"></i>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="!mb-1">Phone</h5>
-                    <p>00 (123) 456 78 90</p>
-                  </div>
-                </div>
-                <div className="flex flex-row">
-                  <div>
-                    <div className="icon text-[#3f78e0]  xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] mr-6 mt-[-0.25rem]">
-                      {" "}
-                      <i className="uil uil-envelope before:content-['\eac8']"></i>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="!mb-1">E-mail</h5>
-                    <p className="!mb-0">
-                      <a
-                        href="mailto:sandbox@email.com"
-                        className="text-[#60697b]"
-                      >
-                        sandbox@email.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
+
               {/* <!--/column --> */}
             </div>
             {/* <!--/.row --> */}
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-8/12 xl:!ml-[16.66666667%] lg:w-10/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] px-[15px] max-w-full">
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 !text-center">
-                  Drop Us a Line
+                  Envíanos un mensaje
                 </h2>
-                <p className="lead leading-[1.65] text-[0.9rem] font-medium !text-center mb-10">
-                  Reach out to us from our contact form and we will get back to
-                  you shortly.
-                </p>
+
                 <form
                   className="contact-form needs-validation"
                   method="post"
@@ -299,11 +190,7 @@ export default function Contact() {
                     </div>
                     {/* <!-- /column --> */}
                     <div className="w-full flex-[0_0_auto] px-[15px] max-w-full !text-center">
-                      <input
-                        type="submit"
-                        className="btn btn-primary text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:border-[#3f78e0] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] !rounded-[50rem] btn-send !mb-3 hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"
-                        value="Send message"
-                      />
+                      <Button title="Enviar"></Button>
                       <p className="text-[#aab0bc]">
                         <strong>*</strong> These fields are required.
                       </p>
