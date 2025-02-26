@@ -20,11 +20,13 @@ const Foother = () => {
                   width: "150px",
                 }}
               />
-              <p className="!mb-4">Tu sonrisa es nuestra prioridad</p>
+              <p className="!mb-4">Amamos cuidar tu sonrisa</p>
               <nav className="nav social social-muted">
                 <a
                   className="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                  href="#"
+                  href="https://www.tiktok.com/@dentum.gt?lang=es"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -40,20 +42,26 @@ const Foother = () => {
                 </a>
                 <a
                   className="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                  href="#"
+                  href="https://www.facebook.com/Dentum.Gt"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="uil uil-facebook-f before:content-['\eae2'] text-[1rem] text-[#4470cf]"></i>
                 </a>
 
                 <a
                   className="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                  href="#"
+                  href="https://www.instagram.com/dentum.gt/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="uil uil-instagram before:content-['\eb9c'] text-[1rem] text-[#d53581]"></i>
                 </a>
                 <a
                   className="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
                   href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="uil uil-youtube before:content-['\edb5'] text-[1rem] text-[#c8312b]"></i>
                 </a>
@@ -70,27 +78,39 @@ const Foother = () => {
               </h4>
               <ul className="pl-0 list-none !mb-0">
                 <li className="mt-[0.35rem]">
-                  <a className="text-[#60697b] hover:text-[#343f52]" href="#">
+                  <a className="text-[#60697b] hover:text-[#343f52]" href="/">
                     Inicio
                   </a>
                 </li>
                 <li className="mt-[0.35rem]">
-                  <a className="text-[#60697b] hover:text-[#343f52]" href="#">
+                  <a
+                    className="text-[#60697b] hover:text-[#343f52]"
+                    href="/about"
+                  >
                     Sobre nosotros
                   </a>
                 </li>
                 <li className="mt-[0.35rem]">
-                  <a className="text-[#60697b] hover:text-[#343f52]" href="#">
+                  <a
+                    className="text-[#60697b] hover:text-[#343f52]"
+                    href="/services"
+                  >
                     Servicios
                   </a>
                 </li>
                 <li className="mt-[0.35rem]">
-                  <a className="text-[#60697b] hover:text-[#343f52]" href="#">
+                  <a
+                    className="text-[#60697b] hover:text-[#343f52]"
+                    href="/testimonials"
+                  >
                     Testimonios
                   </a>
                 </li>
                 <li className="mt-[0.35rem]">
-                  <a className="text-[#60697b] hover:text-[#343f52]" href="#">
+                  <a
+                    className="text-[#60697b] hover:text-[#343f52]"
+                    href="/contact"
+                  >
                     Contacto
                   </a>
                 </li>
@@ -138,11 +158,25 @@ const Foother = () => {
               color: "#000",
             }}
           >
-            Copyright &copy; 2024 DENTUM
+            Copyright &copy; 2025 DENTUM
           </p>
         </div>
       </div>
       {/* <!-- /.container --> */}
+      {/* <!-- progress wrapper --> */}
+      <div className="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#000] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
+        <svg
+          className="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path
+            className="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none"
+            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          />
+        </svg>
+      </div>
     </footer>
   );
 };

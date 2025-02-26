@@ -3798,7 +3798,7 @@ video {
 }
 
 .stroke-\[\#605dba\] {
-  stroke: #605dba;
+  stroke: #000;
 }
 
 .stroke-\[\#747ed1\] {
@@ -5260,7 +5260,7 @@ video {
 
 .\!text-\[\#605dba\] {
   --tw-text-opacity: 1 !important;
-  color: rgb(96 93 186 / var(--tw-text-opacity)) !important;
+  color: #000;
 }
 
 .\!text-\[\#60697b\] {
@@ -5429,7 +5429,7 @@ video {
 
 .text-\[\#605dba\] {
   --tw-text-opacity: 1;
-  color: rgb(96 93 186 / var(--tw-text-opacity));
+  color: #000;
 }
 
 .text-\[\#60697b\] {
