@@ -56,7 +56,7 @@ export const Header = ({ solid }: { solid?: boolean }) => {
               <ul className="navbar-nav">
                 <li className="nav-item dropdown dropdown-mega">
                   <a
-                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#000] after:!text-[#605dba]"
+                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
                     href="/"
                   >
                     Inicio
