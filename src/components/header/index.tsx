@@ -1,5 +1,5 @@
 import { useScrollHeader } from "@/hooks/useScrollHeader";
-import Link from "next/link";
+import "@/styles/globals.css";
 
 export const Header = ({ solid }: { solid?: boolean }) => {
   const isHeaderVisible = useScrollHeader();

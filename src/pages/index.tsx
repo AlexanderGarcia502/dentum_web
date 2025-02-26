@@ -171,21 +171,21 @@ export default function Home() {
                   alignItems: "center",
                 }}
               >
-                <h2 className="text-[calc(1.345rem_+_1.14vw)] font-bold !leading-[1.25] xl:text-[2.2rem] !mb-3">
+                <h2 className="text-[calc(1.345rem_+_1.14vw)] font-bold !leading-[1.7] xl:text-[2.2rem] !mb-3">
                   Nuestros Especialistas
                 </h2>
-                <p>
+                <p className="mb-4">
                   En Dentum, contamos con un equipo de expertos dedicados a
                   brindarte la mejor atención para el cuidado de tu sonrisa.
                 </p>
-                <p>
+                <p className="mb-4">
                   👨‍⚕️ Dr. Esdras – Cirujano Dentista y Ortodoncista Con más de 10
                   años de experiencia en odontología, el Dr. Esdras es
                   especialista en ortodoncia, con formación en Colombia. Su
                   enfoque en la estética y funcionalidad dental permite a los
                   pacientes lograr una sonrisa armónica y saludable.
                 </p>
-                <p>
+                <p className="mb-4">
                   👩‍⚕️ Dra. Cesia Hoajaca – Odontopediatra Especialista en la
                   salud bucal infantil, la Dra. Cesia Hoajaca se enfoca en
                   brindar una experiencia amigable y segura para los más

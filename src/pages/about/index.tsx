@@ -80,7 +80,7 @@ export default function About() {
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">
                   ¿Quienes Somos?
                 </h2>
-                <p className="lead !text-[1.05rem] !leading-[1.6] font-medium">
+                <p className="lead !text-[1.05rem] !leading-[1.6] font-medium mb-4">
                   Somos un equipo de profesionales dedicados a ofrecer servicios
                   dentales integrales, combinando experiencia, tecnología de
                   vanguardia y un enfoque personalizado para cuidar la salud
@@ -160,7 +160,7 @@ export default function About() {
                     La Historia Detrás de DENTUM
                   </h2>
                 </div>
-                <p className="!mb-6">
+                <p className="lead !text-[1.05rem] !leading-[1.6] font-medium mb-4">
                   Aenean eu leo quam. Pellentesque ornare sem lacinia quam
                   venenatis vestibulum. Etiam porta sem malesuada magna mollis
                   euismod. Nullam id dolor id nibh ultricies vehicula ut id
@@ -190,10 +190,10 @@ export default function About() {
                 <h3 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] !mb-6 xxl:pr-6">
                   ¿Porqué Elegirnos?
                 </h3>
-                <p className="text-[1rem] tracking-[-0.03em]">
+                <p className="text-[1rem] tracking-[-0.03em] mb-4">
                   <strong> Comprometidos con tu sonrisa </strong>
                 </p>
-                <p className="text-[1rem] tracking-[-0.03em]">
+                <p className="text-[1rem] tracking-[-0.03em] !leading-[1.6]">
                   En DENTUM, combinamos años de experiencia en odontología con
                   un enfoque personalizado y centrado en el paciente. Nuestro
                   equipo de expertos utiliza tecnología avanzada, como
@@ -242,7 +242,7 @@ export default function About() {
                 <h3 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-5">
                   Nuestra Experiencia
                 </h3>
-                <p className="text-[1rem] tracking-[-0.03em]">
+                <p className="text-[1rem] tracking-[-0.03em] !leading-[1.6]">
                   En DENTUM contamos con una sólida trayectoria en el cuidado
                   dental, respaldada por años de experiencia y formación
                   continua. Nuestro equipo de profesionales ha tratado con éxito
@@ -272,7 +272,7 @@ export default function About() {
                   alt="image"
                 />
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 xl:!px-[4.5rem] lg:!px-[4.5rem]">
-                  Conozca al Equipo Detrás de su Sonrisa Perfecta
+                  Conozca al Equipo Detrás de tu Sonrisa Perfecta
                 </h2>
               </div>
               {/* <!--/column --> */}

@@ -15,7 +15,7 @@ export default function About() {
         <Header />
         {/* <!-- /header --> */}
         <section
-          className="wrapper image-wrapper bg-image text-white bg-no-repeat bg-[center_center] bg-cover relative z-0 !bg-fixed pb-14 min-h-screen"
+          className="wrapper image-wrapper bg-image text-white bg-no-repeat bg-[center_center] bg-cover relative z-0 !bg-fixed pb-14 "
           data-image-src="/assets/img/dentum/testimonials_cover.png"
         >
           <div

@@ -64,8 +64,7 @@ html,
 
 body {
   margin: 0;
-  /* 1 */
-  line-height: inherit;
+  line-height: 1.7;
   /* 2 */
 }
 

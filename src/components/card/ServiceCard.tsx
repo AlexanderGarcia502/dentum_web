@@ -12,7 +12,9 @@ export const ServiceCard = ({ title, img, list }: IServiceCard) => {
         />
       </figure>
       <div className="card-body px-6 py-5">
-        <h4 className="!mb-1">{title}</h4>
+        <h3 className="!mb-1 text-[.85rem]">
+          <strong>{title}</strong>
+        </h3>
         <p className="!mb-0 text-[.85rem]">
           {list.map((text) => (
             <>
