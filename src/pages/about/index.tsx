@@ -183,6 +183,86 @@ export default function About() {
           {/* <!-- /.container --> */}
         </section>
         <section className="wrapper !bg-[#ffffff]">
+          <div className="container">
+            <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] !mb-[4.5rem] xl:!mb-24 lg:!mb-24 md:!mb-24 items-center">
+              {/* <!--/column --> */}
+              <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+                <h3 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] !mb-6 xxl:pr-6">
+                  ¿Porqué Elegirnos?
+                </h3>
+                <p className="text-[1rem] tracking-[-0.03em]">
+                  <strong> Comprometidos con tu sonrisa </strong>
+                </p>
+                <p className="text-[1rem] tracking-[-0.03em]">
+                  En DENTUM, combinamos años de experiencia en odontología con
+                  un enfoque personalizado y centrado en el paciente. Nuestro
+                  equipo de expertos utiliza tecnología avanzada, como
+                  diagnósticos digitales y tratamientos innovadores, para
+                  garantizar resultados precisos y eficaces. Nos enorgullece ser
+                  la elección preferida, dedicados a crear sonrisas saludables y
+                  duraderas,mientras priorizamos la comodidad y el bienestar de
+                  nuestros pacientes.
+                </p>
+
+                {/* <!-- /.progress-list --> */}
+              </div>
+              <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+                <figure className="m-0 p-0">
+                  <img
+                    className="w-auto"
+                    src="./assets/img/dentum/doctor4.png"
+                    srcSet="./assets/img/dentum/doctor4@2x.png 2x"
+                    alt="porque elegirnos"
+                  />
+                </figure>
+              </div>
+              {/* <!--/column --> */}
+            </div>
+            {/* <!--/.row --> */}
+          </div>
+          {/* <!-- /.container --> */}
+        </section>
+        {/* <!-- /section --> */}
+
+        <section className="wrapper !bg-[#ffffff]">
+          <div className="container">
+            <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
+              <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+                <figure className="m-0 p-0">
+                  <img
+                    className="w-auto"
+                    src="./assets/img/dentum/experience.png"
+                    srcSet="./assets/img/dentum/experience@2x.png 2x"
+                    alt="experiencia"
+                  />
+                </figure>
+              </div>
+              {/* <!--/column --> */}
+              <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+                <h3 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-5">
+                  Nuestra Experiencia
+                </h3>
+                <p className="text-[1rem] tracking-[-0.03em]">
+                  En DENTUM contamos con una sólida trayectoria en el cuidado
+                  dental, respaldada por años de experiencia y formación
+                  continua. Nuestro equipo de profesionales ha tratado con éxito
+                  una amplia variedad de casos, siempre comprometido con ofrecer
+                  soluciones de calidad que se adapten a las necesidades
+                  individuales de cada paciente. A lo largo de los años, hemos
+                  perfeccionado nuestras técnicas y adoptado las mejores
+                  prácticas para garantizar resultados duraderos y sonrisas
+                  saludables.
+                </p>
+                {/* <!--/.row --> */}
+              </div>
+              {/* <!--/column --> */}
+            </div>
+            {/* <!--/.row --> */}
+          </div>
+          {/* <!-- /.container --> */}
+        </section>
+        {/* <!--/section --> */}
+        <section className="wrapper !bg-[#ffffff]">
           <div className="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
             <div className="flex flex-wrap mx-[-15px] !mb-3">
               <div className="md:w-10/12 lg:w-10/12 xl:w-9/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
@@ -211,8 +291,11 @@ export default function About() {
               >
                 <div className="swiper">
                   <div className="swiper-wrapper">
-                    {professionals.map(({ name, description, img }) => (
-                      <div className="swiper-slide">
+                    {professionals.map(({ name, description, img }, index) => (
+                      <div
+                        className="swiper-slide"
+                        key={`profesional-${index}`}
+                      >
                         <div className="item-inner">
                           <ProfessionalCard
                             name={name}
@@ -235,81 +318,7 @@ export default function About() {
           </div>
           {/* <!-- /.container --> */}
         </section>
-        <section className="wrapper !bg-[#ffffff]  angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
-          <div className="container pt-32 pb-[4.5rem] xl:pt-36 lg:pt-36 md:pt-36 xl:pb-24 lg:pb-24 md:pb-24">
-            <div className="flex flex-wrap mx-[-15px] md:mx-[-20px] lg:mx-[-20px] xl:mx-[-35px] mt-[-50px] items-center">
-              <div className="md:w-8/12 lg:w-6/12 xl:w-5/12 lg:!ml-0 xl:!ml-[8.33333333%] w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full !relative">
-                <figure className="!rounded-[.4rem] relative z-[2]">
-                  <img
-                    className="!rounded-[.4rem] w-full max-w-full !h-auto"
-                    src="/assets/img/dentum/img1.png"
-                    srcSet="/assets/img/dentum/img1@2x.png 2x"
-                    alt="image"
-                  />
-                </figure>
-              </div>
-              {/* <!--/column --> */}
-              <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-                <img
-                  src="/assets/img/icons/lineal/telemarketer.svg"
-                  className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
-                  alt="image"
-                />
-                <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-8">
-                  ¿Listo para una Sonrisa Espectacular?
-                </h2>
-                <div className="flex flex-row">
-                  <div>
-                    <div className="icon text-[#3f78e0]  xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] mr-6 mt-[-0.25rem]">
-                      <i className="uil uil-location-pin-alt before:content-['\ebd8']"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="!mb-1">Dirección</h5>
-                    <address className=" not-italic leading-[inherit] mb-4">
-                      3 Avenida 3-03, Chimaltenango 04001
-                      <br className="hidden xl:block lg:block md:block" />
-                      Chimaltenango, Guatemala
-                    </address>
-                  </div>
-                </div>
-                <div className="flex flex-row">
-                  <div>
-                    <div className="icon text-[#3f78e0]  xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] mr-6 mt-[-0.25rem]">
-                      {" "}
-                      <i className="uil uil-phone-volume before:content-['\ec50']"></i>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="!mb-1">Teléfono</h5>
-                    <p> (502) 5565 - 7921</p>
-                  </div>
-                </div>
-                <div className="flex flex-row">
-                  <div>
-                    <div className="icon text-[#3f78e0]  xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] mr-6 mt-[-0.25rem]">
-                      <i className="uil uil-envelope before:content-['\eac8']"></i>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="!mb-1">Correo</h5>
-                    <p className="!mb-0">
-                      <a
-                        href="mailto:sandbox@email.com"
-                        className="text-[#60697b]"
-                      >
-                        Dentum.gt@gmail.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <!--/column --> */}
-            </div>
-            {/*<!--/.row -->*/}
-          </div>
-          {/* <!-- /.container --> */}
-        </section>
+
         {/* <!-- /section --> */}
       </div>
       <Foother />
