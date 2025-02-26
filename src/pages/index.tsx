@@ -10,6 +10,8 @@ import { Header } from "@/components/header";
 import { testimonies } from "@/utils/testimonies";
 import { TestimonyCard } from "@/components/card/Testimony";
 import { Button } from "@/components/Button";
+import { services } from "@/utils/services";
+import { ServiceCard } from "@/components/card/ServiceCard";
 
 export default function Home() {
   return (
@@ -37,17 +39,17 @@ export default function Home() {
           <div className="container pt-28 pb-20 sm:!py-28 xxl:!py-40">
             <div className="flex flex-wrap mx-[-15px] justify-center">
               <div
-                className="xl:w-6/12 lg:w-6/12 md:w-6/12 sm:w-6/12 xxl:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full xsm:!text-center text-center"
+                className="xl:w-9/12 lg:w-9/12 md:w-9/12 sm:w-6/12 xxl:w-9/12 w-full flex-[0_0_auto] px-[15px] max-w-full xsm:!text-center text-center"
                 data-cues="slideInDown"
                 data-group="page-title"
                 data-interval="-200"
                 data-delay="500"
               >
                 <p className="lead text-[1.15rem] !leading-[1.5] font-medium mb-0 lg:pr-5 xl:pr-5 xxl:pr-0">
-                  Tu sonrisa es nuestra prioridad
+                  Amamos cuidar tu sonrisa
                 </p>
                 <h2 className="xl:text-[2.8rem] text-[calc(1.405rem_+_1.86vw)] font-bold !leading-[1.2] tracking-[-0.035em] mb-4 xl:pr-5 xxl:pr-0">
-                  Centro de Atención Dental de Confianza
+                  Todas las especialidades dentales en un mismo lugar
                 </h2>
                 <div>
                   <a
@@ -98,104 +100,18 @@ export default function Home() {
                 className="flex flex-wrap mx-[-15px] grid-view md:mx-[-20px] lg:mx-[-20px] xl:mx-[-25px] mt-[-40px] xl:mt-0 lg:mt-0"
                 style={{ width: "100%", justifyContent: "space-around" }}
               >
-                <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
-                  <div className="!relative">
-                    <div
-                      className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden"
-                      style={{
-                        height: "500px",
-                      }}
-                    >
-                      <figure className="card-img-top">
-                        <Image
-                          src={"/assets/img/prevent.jpg"}
-                          width={600}
-                          height={300}
-                          className="object-cover w-full h-full"
-                          alt="Odontología Preventiva"
-                        />
-                      </figure>
-                      <div className="card-body px-6 py-5">
-                        <h4 className="!mb-1">Odontología Preventiva</h4>
-                        <p className="!mb-0 text-[.85rem]">
-                          • Limpiezas dentales profesionales <br />
-                          • Exámenes y diagnóstico <br />
-                          • Aplicación de flúor y selladores <br />• Educación
-                          en higiene bucal
-                        </p>
-                      </div>
-                      {/* <!--/.card-body --> */}
+                {services.map((props, index) => (
+                  <div
+                    key={`service-${index}`}
+                    className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]"
+                  >
+                    <div className="!relative">
+                      <ServiceCard {...props} />
+                      {/* <!-- /.card --> */}
                     </div>
-                    {/* <!-- /.card --> */}
+                    {/* <!-- /div --> */}
                   </div>
-                  {/* <!-- /div --> */}
-                </div>
-                {/* <!--/column --> */}
-                <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
-                  <div className="!relative">
-                    <div
-                      className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden"
-                      style={{
-                        height: "500px",
-                      }}
-                    >
-                      <figure className="card-img-top">
-                        <Image
-                          src={"/assets/img/stetic.jpg"}
-                          width={600}
-                          height={300}
-                          className="object-cover w-full h-full"
-                          alt="Estética Dental"
-                        />
-                      </figure>
-                      <div className="card-body px-6 py-5">
-                        <h4 className="!mb-1">Estética Dental</h4>
-                        <p className="!mb-0 text-[.85rem]">
-                          • Blanqueamiento dental <br />
-                          • Carillas dentales <br />
-                          • Diseño de sonrisa <br />
-                          • Reconstrucción estética <br />
-                        </p>
-                      </div>
-                      {/* <!--/.card-body --> */}
-                    </div>
-                    {/* <!-- /.card --> */}
-                  </div>
-                  {/* <!-- /div --> */}
-                </div>
-                {/* <!--/column --> */}
-                <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full md:mt-[40px] sm:mt-[40px] xsm:mt-[40px]">
-                  <div className="!relative">
-                    <div
-                      className="card min-h-[450px]  flex flex-col shadow-lg rounded-lg overflow-hidden"
-                      style={{
-                        height: "500px",
-                      }}
-                    >
-                      <figure className="card-img-top">
-                        <Image
-                          src={"/assets/img/orthodontic1.jpg"}
-                          width={600}
-                          height={300}
-                          className="object-cover w-full h-full"
-                          alt="Servicio de Ortodoncia"
-                        />
-                      </figure>
-                      <div className="card-body px-6 py-5">
-                        <h4 className="!mb-1">Ortodoncia</h4>
-                        <p className="!mb-0 text-[.85rem]">
-                          • Brackets tradicionales <br />
-                          • Ortodoncia invisible (Invisalign) <br />
-                          • Corrección de mordida <br />
-                        </p>
-                      </div>
-                      {/* <!--/.card-body --> */}
-                    </div>
-                    {/* <!-- /.card --> */}
-                  </div>
-                  {/* <!-- /div --> */}
-                </div>
-                {/* <!--/column --> */}
+                ))}
               </div>
               <div className="mt-12">
                 <a
@@ -226,8 +142,8 @@ export default function Home() {
               <div className="md:w-8/12 lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full !mx-auto mt-[50px]">
                 <img
                   className="w-full max-w-full !h-auto"
-                  src="/assets/img/dentum/doctors.jpeg"
-                  srcSet="/assets/img/dentum/doctors.jpeg 2x"
+                  src="/assets/img/dentum/doctors4.png"
+                  srcSet="/assets/img/dentum/doctors4@2x.png 2x"
                   alt="Dr Esdras y Dra Cecy"
                 />
               </div>
@@ -521,7 +437,7 @@ export default function Home() {
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
                 <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 !text-center">
-                  Nuestras Ubicaciones
+                  ¿En Donde Puedes Encontrarnos?
                 </h2>
                 <p className="lead leading-[1.65] text-[0.9rem] font-medium !text-center mb-10"></p>
                 <ul className="nav nav-tabs nav-tabs-basic">
@@ -568,7 +484,7 @@ export default function Home() {
                           <div className="flex flex-row">
                             <div>
                               <div className="icon text-[#3f78e0] xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] !mr-4 mt-[-0.25rem]">
-                                <i className="uil uil-location-pin-alt before:content-['\ebd8']"></i>{" "}
+                                <i className="uil0 uil-location-pin-alt before:content-['\ebd8']"></i>{" "}
                               </div>
                             </div>
                             <div className="!self-start !justify-start">
@@ -611,6 +527,17 @@ export default function Home() {
                                   {Information.EMAIL}
                                 </a>
                               </p>
+                            </div>
+                          </div>
+                          <div className="flex flex-row">
+                            <div>
+                              <div className="icon text-[#3f78e0] xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] !mr-4 mt-[-0.25rem]">
+                                <i className="uil0 uil-location-pin-alt before:content-['\ebd8']"></i>{" "}
+                              </div>
+                            </div>
+                            <div className="!self-start !justify-start">
+                              <h5 className="!mb-1">Waze</h5>
+                              <a href={Information.WAZE}>Abrir Waze</a>
                             </div>
                           </div>
                           {/* <!--/div --> */}
@@ -668,7 +595,8 @@ export default function Home() {
                             <div>
                               <h5 className="!mb-1">Teléfono</h5>
                               <p>
-                                (502) 5565 - 7921 <br />
+                                {Information.PHONE_SAC}
+                                <br />
                               </p>
                             </div>
                           </div>
@@ -689,6 +617,17 @@ export default function Home() {
                                   Dentum.gt@gmail.com
                                 </a>
                               </p>
+                            </div>
+                          </div>
+                          <div className="flex flex-row">
+                            <div>
+                              <div className="icon text-[#3f78e0] xl:text-[1.4rem] text-[calc(1.265rem_+_0.18vw)] !mr-4 mt-[-0.25rem]">
+                                <i className="uil0 uil-location-pin-alt before:content-['\ebd8']"></i>{" "}
+                              </div>
+                            </div>
+                            <div className="!self-start !justify-start">
+                              <h5 className="!mb-1">Waze</h5>
+                              <a href={Information.WAZE_SAC}>Abrir Waze</a>
                             </div>
                           </div>
                           {/* <!--/div --> */}

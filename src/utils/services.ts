@@ -11,12 +11,7 @@ export const services = [
   {
     img: "/assets/img/dentum/services1.png",
     title: "Estética Dental",
-    list: [
-      "Blancamiento dental",
-      "Carrillas dentales",
-      "Diseño de sonrisa",
-      "Reconstrucción estética",
-    ],
+    list: ["Rellenos", "Coronas", "Puentes", "Prótesis Removibles y fijas"],
   },
   {
     img: "/assets/img/dentum/services2.png",
@@ -25,6 +20,7 @@ export const services = [
       "Brackets tradicionales",
       "Ortodoncia invisible",
       "Corrección de mordida",
+      "Corrección de mordidas con retenedores",
     ],
   },
 ];
