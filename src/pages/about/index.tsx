@@ -18,7 +18,7 @@ export default function About() {
           <div className="container pt-10 xl:pt-[4.5rem] lg:pt-[4.5rem] md:pt-[4.5rem] !text-center">
             <div className="flex flex-wrap mx-[-15px]">
               <div className="xl:w-6/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-                <h1 className="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] mb-4">
+                <h1 className="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] mb-4 xsm:mt-10">
                   ¡Hola! Somos DENTUM
                 </h1>
                 <p className="lead text-[1.05rem] !leading-[1.6] font-medium !mb-0">
@@ -32,7 +32,7 @@ export default function About() {
           </div>
           {/* <!-- /.container --> */}
           <figure
-            className="absoute"
+            className="absoute xsm:hidden"
             style={{
               bottom: 0,
               left: 0,
@@ -48,16 +48,16 @@ export default function About() {
             <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] !mb-[4.5rem] xl:!mb-[7rem] lg:!mb-[7rem] md:!mb-[7rem] items-center">
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full !relative xl:!order-2 lg:!order-2">
                 <div className="flex flex-wrap !relative overlap-grid-2">
-                  <div className="item xl:w-[70%] xl:z-[3] xl:ml-[30%] xl:mt-0 lg:w-[70%] lg:z-[3] lg:ml-[30%] lg:mt-0 md:w-[70%] md:z-[3] md:ml-[30%] md:mt-0">
+                  {/* <div className="item xl:w-[70%] xl:z-[3] xl:ml-[30%] xl:mt-0 lg:w-[70%] lg:z-[3] lg:ml-[30%] lg:mt-0 md:w-[70%] md:z-[3] md:ml-[30%] md:mt-0">
                     <figure className="!rounded-[.4rem] shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] relative">
                       <img
                         className="!rounded-[.4rem] "
-                        src="/assets/img/dentum/about_cover.jpg"
-                        srcSet="/assets/img/dentum/about_cover.jpg 2x"
+                        src="/assets/img/dentum/about_cover1.png"
+                        srcSet="/assets/img/dentum/about_cover1.png 2x"
                         alt="image"
                       />
                     </figure>
-                  </div>
+                  </div> */}
                   <div className="item xl:w-[55%] xl:mt-[-45%] xl:z-[4] xl:ml-0 lg:w-[55%] lg:mt-[-45%] lg:z-[4] lg:ml-0 md:w-[55%] md:mt-[-45%] md:z-[4] md:ml-0">
                     <figure className="!rounded-[.4rem] shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] relative">
                       <img
@@ -226,7 +226,7 @@ export default function About() {
 
         <section className="wrapper !bg-[#ffffff]">
           <div className="container">
-            <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
+            <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center flex-col-reverse xl:flex-row lg:flex-row">
               <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
                 <figure className="m-0 p-0">
                   <img

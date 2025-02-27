@@ -53,7 +53,7 @@ export default function About() {
                   <div className="flex flex-wrap mx-[-15px]">
                     <div className="md:w-10/12 lg:w-9/12 xl:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
                       <h3 className="text-[calc(1.345rem_+_1.14vw)] font-semibold !leading-[1.25] xl:text-[2.2rem] mb-10 xxl:!px-10">
-                        Que opinan los pacientes de Dentum
+                        Que opinan los pacientes de <strong>Dentum</strong>
                       </h3>
                     </div>
                     {/* <!-- /column --> */}

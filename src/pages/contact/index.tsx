@@ -6,7 +6,6 @@ import Foother from "@/components/foother/Foother";
 import { Header } from "@/components/header";
 import { ScriptComponent } from "@/utils/Scripts";
 import { Location } from "@/components/Location";
-import { Button } from "@/components/Button";
 import { Contacts } from "@/components/Contacts";
 
 export default function Contact() {

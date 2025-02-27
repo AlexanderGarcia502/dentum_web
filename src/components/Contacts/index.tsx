@@ -5,13 +5,13 @@ export const Contacts = () => {
     <>
       <div className="container pt-10 pb-20 lg:!py-28 xl:!py-40 xxl:!py-60 !relative">
         <img
-          className="xl:!absolute lg:!absolute max-lg:!static w-full flex-[0_0_auto] max-w-full  xl:-translate-y-2/4 lg:-translate-y-2/4  !mb-3 md:!mb-10 lg:!mb-0 xl:!mb-0"
+          className="xl:!absolute lg:!absolute max-lg:!static w-full flex-[0_0_auto] max-w-full  xl:-translate-y-2/4 lg:-translate-y-2/4  !mb-3 md:!mb-10 lg:!mb-0 xl:!mb-0 left-[-13%] xsm:hidden"
           src="../../assets/img/dentum/instagram.png"
           srcSet="../../assets/img/dentum/instagram.png 2x"
           alt="image"
           style={{
             top: "50%",
-            left: "-13%",
+            // left: "-13%",
             width: 900,
             zIndex: -1,
           }}
