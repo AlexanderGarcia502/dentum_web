@@ -1,6 +1,4 @@
 import React from "react";
-import "../../../public/assets/css/style.css";
-import "../../../public/assets/css/colors/navy.css";
 
 const Foother = () => {
   return (

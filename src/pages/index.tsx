@@ -1,17 +1,12 @@
-import "../../public/assets/fonts/unicons/unicons.css";
-import "../../public/assets/css/plugins.css";
-import "../../public/assets/css/style.css";
-import "../../public/assets/css/colors/navy.css";
 import Foother from "@/components/foother/Foother";
-
 import { ScriptComponent } from "@/utils/Scripts";
 import { Information } from "@/interfaces/enums/information";
-import { Header } from "@/components/header";
 import { testimonies } from "@/utils/testimonies";
 import { TestimonyCard } from "@/components/card/Testimony";
 import { services } from "@/utils/services";
 import { ServiceCard } from "@/components/card/ServiceCard";
 import { Location } from "@/components/Location";
+import { HeaderContainer } from "@/components/headerContainer";
 
 export default function Home() {
   return (
@@ -19,9 +14,9 @@ export default function Home() {
       <div className="grow shrink-0">
         {/* <!-- /header --> */}
         {/**  Cover init  */}
-        <Header />
+        <HeaderContainer />
         <section
-          className="wrapper image-wrapper bg-cover bg-image bg-xs-none bg-[rgba(246,247,249,1)] bg-[center_center] bg-no-repeat bg-scroll relative z-0 xsm:!bg-none md:min-h-[25rem] sm:min-h-[20rem] xsm:min-h-[20rem]"
+          className="wrapper image-wrapper bg-cover bg-image bg-xs-none bg-[rgba(246,247,249,1)] bg-[center_center] bg-no-repeat bg-scroll relative z-0  md:min-h-[25rem] sm:min-h-[20rem] xsm:min-h-[20rem]"
           data-image-src="/assets/img/cover5.jpg"
         >
           <div
@@ -106,7 +101,7 @@ export default function Home() {
             </div>
             {/*<!-- /.row -->*/}
             <div
-              className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-7"
+              className="flex flex-wrap   xsm:mx-[auto] md:mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-7"
               style={{ width: "100%", justifyContent: "center" }}
             >
               {/** HERE */}
@@ -151,7 +146,7 @@ export default function Home() {
 
         {/** About init */}
 
-        <section className="wrapper">
+        <section className="wrapper bg-[#f6f7f9]">
           <div className="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
             <div className="flex flex-wrap mx-[-15px] md:mx-[-20px] lg:mx-[-20px] xl:mx-[-35px] mt-[-50px] items-center mb-0">
               <div className="md:w-8/12 lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full !mx-auto mt-[50px]">
@@ -164,7 +159,7 @@ export default function Home() {
               </div>
               {/* <!--/column --> */}
               <div
-                className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full mt-[50px]"
+                className=" xsm:text-center xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full mt-[50px]"
                 style={{
                   display: "flex",
                   flexDirection: "column",

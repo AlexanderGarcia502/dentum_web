@@ -17,7 +17,13 @@ export const Contacts = () => {
           }}
         />
         <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] items-center">
-          <div className="md:w-10/12 md:!ml-[8.33333333%] lg:w-6/12 lg:!ml-[50%] xl:w-6/12 xl:!ml-[50%] flex-[0_0_auto]  xl:!px-[35px] lg:!px-[20px] md:!px-[20px] !px-[15px] w-full max-w-full xl:!mt-[-2.25rem] lg:!mt-[-2.25rem] md:!mt-[-2.25rem] text-center xl:text-left lg:text-left">
+          <div
+            className="md:w-10/12 md:!ml-[8.33333333%] lg:w-6/12 lg:!ml-[50%] xl:w-6/12 xl:!ml-[50%] flex-[0_0_auto]  xl:!px-[35px] lg:!px-[20px] md:!px-[20px] !px-[15px] w-full max-w-full xl:!mt-[-2.25rem] lg:!mt-[-2.25rem] md:!mt-[-2.25rem] text-center xl:text-left lg:text-left"
+            data-cues="slideInDown"
+            data-group="page-title"
+            data-interval="-200"
+            data-delay="500"
+          >
             <h1 className="!text-[calc(1.305rem_+_0.66vw)] font-bold xl:!text-[1.8rem] !leading-[1.3] !mb-4 md:!px-10 lg:!px-0">
               Todas las especialidades dentales en un solo lugar ¡Escríbenos!
             </h1>

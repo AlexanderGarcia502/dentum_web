@@ -1,18 +1,14 @@
-import "../../../public/assets/fonts/unicons/unicons.css";
-import "../../../public/assets/css/plugins.css";
-import "../../../public/assets/css/style.css";
-import "../../../public/assets/css/colors/navy.css";
 import Foother from "@/components/foother/Foother";
 import { ScriptComponent } from "@/utils/Scripts";
-import { Header } from "@/components/header";
 import { testimonies } from "@/utils/testimonies";
 import { TestimonyCard } from "@/components/card/Testimony";
+import { HeaderContainer } from "@/components/headerContainer";
 
 export default function About() {
   return (
     <>
       <div className="grow shrink-0">
-        <Header />
+        <HeaderContainer />
         {/* <!-- /header --> */}
         <section
           className="wrapper image-wrapper bg-image text-white bg-no-repeat bg-[center_center] bg-cover relative z-0 !bg-fixed pb-14 "
@@ -29,7 +25,13 @@ export default function About() {
             }}
           ></div>
 
-          <div className="py-14">
+          <div
+            className="py-14"
+            data-cues="slideInDown"
+            data-group="page-title"
+            data-interval="-200"
+            data-delay="500"
+          >
             <div className="relative z-10 pt-14 w-full text-center flex items-center justify-center">
               <h1 className="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] !mb-4 ">
                 Sonrisas felices, pacientes satisfechos

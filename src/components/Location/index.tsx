@@ -2,7 +2,7 @@ import { Information } from "@/interfaces/enums/information";
 
 export const Location = () => {
   return (
-    <section className="wrapper !bg-[#ffffff] ">
+    <section className="wrapper bg-[#f6f7f9] pt-20">
       <div className="container pb-16 xl:pb-20 lg:pb-20 md:pb-20">
         <div className="flex flex-wrap mx-[-15px]">
           <div className="xl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">

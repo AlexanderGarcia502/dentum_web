@@ -1,15 +1,10 @@
 import { useScrollHeader } from "@/hooks/useScrollHeader";
-import "@/styles/globals.css";
 
 export const Header = ({ solid }: { solid?: boolean }) => {
   const isHeaderVisible = useScrollHeader();
   return (
     <header
-      className={`sticky top-0 w-full border-b-gray-200  transition-all duration-300  ${
-        isHeaderVisible
-          ? "bg-white backdrop-blur-sm shadow-lg"
-          : "bg-white backdrop-blur-sm"
-      }`}
+      className="relative wrapper !bg-[#ffffff] "
       style={{
         zIndex: 100000,
       }}
@@ -29,7 +24,7 @@ export const Header = ({ solid }: { solid?: boolean }) => {
       >
         <div className="container xl:flex-row lg:flex-row !flex-nowrap items-center">
           <div className="navbar-brand w-full">
-            <a href="./index.html">
+            <a href="/">
               <img
                 src="/assets/img/dentum/logo.png"
                 srcSet="/assets/img/dentum/logo.png 2x"
@@ -154,7 +149,6 @@ export const Header = ({ solid }: { solid?: boolean }) => {
                 </button>
               </li>
             </ul>
-            {/* <!-- /.navbar-nav --> */}
           </div>
           {/* <!-- /.navbar-other --> */}
         </div>

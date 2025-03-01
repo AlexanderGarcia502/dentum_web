@@ -1,23 +1,25 @@
-import "../../../public/assets/fonts/unicons/unicons.css";
-import "../../../public/assets/css/plugins.css";
-import "../../../public/assets/css/style.css";
-import "../../../public/assets/css/colors/navy.css";
 import Foother from "@/components/foother/Foother";
-import { Header } from "@/components/header";
 import { ScriptComponent } from "@/utils/Scripts";
 import { professionals } from "@/utils/professionals";
 import { ProfessionalCard } from "@/components/card/Professional";
+import { HeaderContainer } from "@/components/headerContainer";
 
 export default function About() {
   return (
     <>
       <div className="grow shrink-0">
-        <Header />
+        <HeaderContainer />
         {/* <!-- /header --> */}
         <section className="wrapper  bg-[rgba(246,247,249,1)] ">
           <div className="container pt-10 xl:pt-[4.5rem] lg:pt-[4.5rem] md:pt-[4.5rem] !text-center">
             <div className="flex flex-wrap mx-[-15px]">
-              <div className="xl:w-6/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
+              <div
+                className="xl:w-6/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto"
+                data-cues="slideInDown"
+                data-group="page-title"
+                data-interval="-200"
+                data-delay="500"
+              >
                 <h1 className="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] mb-4 xsm:mt-10">
                   ¡Hola! Somos DENTUM
                 </h1>
@@ -43,7 +45,7 @@ export default function About() {
           </figure>
         </section>
         {/* <!-- /section --> */}
-        <section className="wrapper !bg-[#ffffff]  angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
+        <section className="wrapper angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
           <div className="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
             <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] !mb-[4.5rem] xl:!mb-[7rem] lg:!mb-[7rem] md:!mb-[7rem] items-center">
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full !relative xl:!order-2 lg:!order-2">
@@ -74,10 +76,10 @@ export default function About() {
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
                 <img
                   src="/assets/img/icons/lineal/megaphone.svg"
-                  className="icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
+                  className=" xsm:mx-[auto] icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
                   alt="image"
                 />
-                <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">
+                <h2 className=" xsm:text-center text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">
                   ¿Quienes Somos?
                 </h2>
                 <p className="lead !text-[1.05rem] !leading-[1.6] font-medium mb-4">
@@ -135,11 +137,14 @@ export default function About() {
               {/* <!--/column --> */}
             </div>
             {/*<!--/.row -->*/}
-            <div className="flex flex-wrap mx-[-15px] mb-5">
-              {/* <!-- /column --> */}
-            </div>
+          </div>
+          {/* <!-- /.container --> */}
+        </section>
+        <section className="wrapper bg-[#f6f7f9] angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
+          <div className="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
+            {/*<!--/.row -->*/}
             {/* <!-- /.row --> */}
-            <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center">
+            <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center w-full">
               <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full xl:!order-0 lg:!order-0">
                 <img
                   className="w-full max-w-full !h-auto"
@@ -149,7 +154,7 @@ export default function About() {
                 />
               </div>
               {/* <!--/column --> */}
-              <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+              <div className=" xsm:text-center  xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
                 <div className="w-full flex-[0_0_auto] px-[15px] max-w-full">
                   <img
                     src="/assets/img/icons/lineal/list.svg"
@@ -183,10 +188,10 @@ export default function About() {
           {/* <!-- /.container --> */}
         </section>
         <section className="wrapper !bg-[#ffffff]">
-          <div className="container">
+          <div className="container py-[5rem] xl:!py-[7rem] lg:!py-[7rem] md:!py-[7rem]">
             <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] !mb-[4.5rem] xl:!mb-24 lg:!mb-24 md:!mb-24 items-center">
               {/* <!--/column --> */}
-              <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+              <div className=" xsm:text-center xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
                 <h3 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] !mb-6 xxl:pr-6">
                   ¿Porqué Elegirnos?
                 </h3>
@@ -222,10 +227,11 @@ export default function About() {
           </div>
           {/* <!-- /.container --> */}
         </section>
+
         {/* <!-- /section --> */}
 
-        <section className="wrapper !bg-[#ffffff]">
-          <div className="container">
+        <section className="wrapper bg-[#f6f7f9]">
+          <div className="container py-[5rem] xl:!py-[7rem] lg:!py-[7rem] md:!py-[7rem]">
             <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center flex-col-reverse xl:flex-row lg:flex-row">
               <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
                 <figure className="m-0 p-0">
@@ -238,8 +244,8 @@ export default function About() {
                 </figure>
               </div>
               {/* <!--/column --> */}
-              <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-                <h3 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-5">
+              <div className=" xsm:text-center xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+                <h3 className=" text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-5">
                   Nuestra Experiencia
                 </h3>
                 <p className="text-[1rem] tracking-[-0.03em] !leading-[1.6]">

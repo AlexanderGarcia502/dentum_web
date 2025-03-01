@@ -1,7 +1,3 @@
-import "../../../public/assets/fonts/unicons/unicons.css";
-import "../../../public/assets/css/plugins.css";
-import "../../../public/assets/css/style.css";
-import "../../../public/assets/css/colors/navy.css";
 import Foother from "@/components/foother/Foother";
 import { Header } from "@/components/header";
 import { ScriptComponent } from "@/utils/Scripts";
@@ -22,7 +18,7 @@ export default function Contact() {
         </section>
 
         {/* <!-- /section --> */}
-        <section className="wrapper !bg-[#ffffff]  angled upper-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:border-y-transparent before:border-0 before:border-solid before:right-0 after:content-[''] after:block after:absolute after:z-0 after:border-y-transparent after:border-[#fefefe] after:border-0 after:border-solid after:right-0">
+        <section className="wrapper bg-[#f6f7f9] angled upper-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:border-y-transparent before:border-0 before:border-solid before:right-0 after:content-[''] after:block after:absolute after:z-0 after:border-y-transparent after:border-[#fefefe] after:border-0 after:border-solid after:right-0">
           <div className="container py-[4.5rem] xl:!py-24 lg:!py-24 md:!py-24">
             <Location />
 
