@@ -73,12 +73,16 @@ export default function About() {
                 </div>
               </div>
               {/* <!--/column --> */}
-              <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+              <div
+                className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full"
+                data-cues="slideInUp"
+              >
                 <img
                   src="/assets/img/icons/lineal/megaphone.svg"
                   className=" xsm:mx-[auto] icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] mb-4"
                   alt="image"
                 />
+
                 <h2 className=" xsm:text-center text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] !mb-3">
                   ¿Quienes Somos?
                 </h2>
@@ -154,7 +158,10 @@ export default function About() {
                 />
               </div>
               {/* <!--/column --> */}
-              <div className=" xsm:text-center  xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+              <div
+                className=" xsm:text-center  xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full"
+                data-cues="slideInUp"
+              >
                 <div className="w-full flex-[0_0_auto] px-[15px] max-w-full">
                   <img
                     src="/assets/img/icons/lineal/list.svg"
@@ -191,7 +198,10 @@ export default function About() {
           <div className="container py-[5rem] xl:!py-[7rem] lg:!py-[7rem] md:!py-[7rem]">
             <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] !mb-[4.5rem] xl:!mb-24 lg:!mb-24 md:!mb-24 items-center">
               {/* <!--/column --> */}
-              <div className=" xsm:text-center xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+              <div
+                className=" xsm:text-center xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full"
+                data-cues="slideInUp"
+              >
                 <h3 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] !mb-6 xxl:pr-6">
                   ¿Porqué Elegirnos?
                 </h3>
@@ -244,7 +254,10 @@ export default function About() {
                 </figure>
               </div>
               {/* <!--/column --> */}
-              <div className=" xsm:text-center xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
+              <div
+                className=" xsm:text-center xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full"
+                data-cues="slideInUp"
+              >
                 <h3 className=" text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-5">
                   Nuestra Experiencia
                 </h3>
@@ -296,7 +309,11 @@ export default function About() {
                 data-items-xs="1"
               >
                 <div className="swiper">
-                  <div className="swiper-wrapper">
+                  <div
+                    className="swiper-wrapper"
+                    data-cues="zoomIn"
+                    data-group="profesionals"
+                  >
                     {professionals.map(({ name, description, img }, index) => (
                       <div
                         className="swiper-slide"

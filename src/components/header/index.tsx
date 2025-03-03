@@ -33,7 +33,7 @@ export const Header = ({ solid }: { solid?: boolean }) => {
               <ul className="navbar-nav">
                 <li className="nav-item dropdown dropdown-mega">
                   <a
-                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
+                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#3f78e0] after:!text-[#3f78e0]"
                     href="/"
                   >
                     Inicio
@@ -41,7 +41,7 @@ export const Header = ({ solid }: { solid?: boolean }) => {
                 </li>
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
+                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#3f78e0] after:!text-[#3f78e0]"
                     href="/about"
                   >
                     Sobre nosotros
@@ -49,7 +49,7 @@ export const Header = ({ solid }: { solid?: boolean }) => {
                 </li>
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
+                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#3f78e0] after:!text-[#3f78e0]"
                     href="/services"
                   >
                     Servicios
@@ -57,7 +57,7 @@ export const Header = ({ solid }: { solid?: boolean }) => {
                 </li>
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
+                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#3f78e0] after:!text-[#3f78e0]"
                     href="/testimonials"
                   >
                     Testimonios
@@ -65,7 +65,7 @@ export const Header = ({ solid }: { solid?: boolean }) => {
                 </li>
                 <li className="nav-item dropdown dropdown-mega">
                   <a
-                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#605dba] after:!text-[#605dba]"
+                    className="nav-link  font-bold tracking-[-0.01rem] hover:!text-[#3f78e0] after:!text-[#3f78e0]"
                     href="/contact"
                   >
                     Contáctanos

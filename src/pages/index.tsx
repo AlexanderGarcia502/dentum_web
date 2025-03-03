@@ -151,10 +151,7 @@ export default function Home() {
         <section className="wrapper bg-[#f6f7f9]">
           <div className="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
             <div className="flex flex-wrap mx-[-15px] md:mx-[-20px] lg:mx-[-20px] xl:mx-[-35px] mt-[-50px] items-center mb-0">
-              <div
-                className="md:w-8/12 lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full !mx-auto mt-[50px] "
-                data-cues="zoomIn"
-              >
+              <div className="md:w-8/12 lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full !mx-auto mt-[50px] ">
                 <img
                   className="w-full max-w-full !h-auto"
                   src="/assets/img/dentum/doctors4.png"
@@ -170,6 +167,7 @@ export default function Home() {
                   flexDirection: "column",
                   alignItems: "center",
                 }}
+                data-cues="slideInUp"
               >
                 <h2 className="text-[calc(1.345rem_+_1.14vw)] font-bold !leading-[1.7] xl:text-[2.2rem] !mb-3">
                   Nuestros Especialistas
@@ -218,7 +216,11 @@ export default function Home() {
 
         {/** Testimonials init */}
 
-        <section className="wrapper !bg-[#ffffff] ">
+        <section
+          className="wrapper !bg-[#ffffff] "
+          data-cues="slideInUp"
+          data-group="clients"
+        >
           <div className="container pt-20 xl:pt-28 lg:pt-28 md:pt-28 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
             <h2 className="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] leading-[1.3] mb-3 !text-center">
               Clientes Satisfechos

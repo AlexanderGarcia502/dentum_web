@@ -63,7 +63,10 @@ export default function About() {
                   {/* <!-- /.row --> */}
                   <div className="flex flex-wrap mx-[-15px]">
                     <div className="itemgrid xl:w-11/12 lg:w-11/12 md:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto xl:!mb-[-17.5rem] lg:!mb-[-17.5rem]">
-                      <div className="flex flex-wrap mx-[-15px] isotope mt-[-30px]">
+                      <div
+                        className="flex flex-wrap mx-[-15px] isotope mt-[-30px]"
+                        data-cues="zoomIn"
+                      >
                         {testimonies.map(({ content, name }, index) => (
                           <div
                             className="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]"
