@@ -212,9 +212,9 @@ export default function About() {
                 {/* <!-- /.progress-list --> */}
               </div>
               <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-                <figure className="m-0 p-0">
+                <figure className="m-0 p-0 img-mask mask-1">
                   <img
-                    className="w-auto"
+                    className="w-auto "
                     src="./assets/img/dentum/doctor4.png"
                     srcSet="./assets/img/dentum/doctor4@2x.png 2x"
                     alt="porque elegirnos"
@@ -234,7 +234,7 @@ export default function About() {
           <div className="container py-[5rem] xl:!py-[7rem] lg:!py-[7rem] md:!py-[7rem]">
             <div className="flex flex-wrap mx-[-15px] xl:mx-[-35px] lg:mx-[-20px] mt-[-50px] items-center flex-col-reverse xl:flex-row lg:flex-row">
               <div className="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] px-[15px] mt-[50px] max-w-full">
-                <figure className="m-0 p-0">
+                <figure className="m-0 p-0 img-mask mask-3">
                   <img
                     className="w-auto"
                     src="./assets/img/dentum/experience.png"

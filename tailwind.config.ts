@@ -7,7 +7,6 @@ const config: Config = {
     fontFamily: {
       IBMPlexSerif: ["IBM Plex Serif", "serif"],
       SpaceGrotesk: ["Space Grotesk", "sans-serif"],
-      Manrope: ["Manrope", "sans-serif"],
       Unicons: ["Unicons"],
       Monospace: [
         'SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace',

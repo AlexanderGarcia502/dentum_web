@@ -2,10 +2,10 @@ import { IServiceCard } from "./interface";
 
 export const ServiceCard = ({ title, img, list }: IServiceCard) => {
   return (
-    <div className="card">
-      <figure className="card-img-top">
+    <div className="card lift">
+      <figure className="card-img-top ">
         <img
-          className="max-w-full h-auto"
+          className=" max-w-full h-auto"
           src={img}
           srcSet={`${img} 2x`}
           alt="image"

@@ -9,34 +9,7 @@ export default function Services() {
     <>
       <div className="grow shrink-0">
         <HeaderContainer solid />
-        {/* <!-- /header --> */}
-        <section
-          className="wrapper image-wrapper bg-image bg-overlay text-white bg-no-repeat bg-[center_center] bg-cover relative z-0 !bg-fixed before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(30,34,40,0.5)] xsm:hidden"
-          data-image-src="/assets/img/dentum/services.png"
-        >
-          <div className="container pt-36 xl:pt-[12.5rem] lg:pt-[12.5rem] md:pt-[12.5rem] pb-32 xl:pb-40 lg:pb-40 md:pb-40 !text-center">
-            <div className="flex flex-wrap mx-[-15px]">
-              <div
-                className="md:w-10/12 lg:w-8/12 xl:w-7/12 xxl:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto"
-                data-cues="slideInDown"
-                data-group="page-title"
-                data-interval="-200"
-                data-delay="500"
-              >
-                <h1 className="text-[calc(1.365rem_+_1.38vw)] font-bold leading-[1.2] xl:text-[2.4rem] text-white !mb-3">
-                  Estamos para servirte con una sonrisa
-                </h1>
-                <p className="lead text-[1.05rem] leading-[1.6] font-medium md:!px-3 lg:!px-7 xl:!px-9 xxl:!px-10">
-                  <br />
-                </p>
-              </div>
-              {/* <!-- /column --> */}
-            </div>
-            {/* <!-- /.row --> */}
-          </div>
-          {/* <!-- /.container --> */}
-        </section>
-        {/* <!-- /section --> */}
+
         <section className="wrapper !bg-[#ffffff]">
           <div className="container py-[5rem] xl:!py-[4rem] lg:!py-[4rem] md:!py-[4rem]">
             <div className="flex flex-wrap mx-[-15px] !text-center">
@@ -76,6 +49,7 @@ export default function Services() {
               <div
                 className="flex flex-wrap mx-[-15px] grid-view md:mx-[-20px] lg:mx-[-20px] xl:mx-[-25px] mt-[40px] xl:mt-0 lg:mt-0"
                 style={{ paddingLeft: "1.2rem", paddingRight: "1.2rem" }}
+                data-cues="fadeIn"
               >
                 {/* <!--/column --> */}
                 {services.map(({ img, title, list }, index) => (

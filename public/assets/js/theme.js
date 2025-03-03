@@ -66,7 +66,7 @@ var theme = {
         }
       },
     };
-    // var banner = new Headhesive(".navbar", options);
+    var banner = new Headhesive(".navbar", options);
   },
   /**
    * Sub Menus
@@ -875,9 +875,9 @@ var theme = {
                       })
                       .then((txt) => {
                         var alertBox =
-                          '<div className="alert ' +
+                          '<div class="alert ' +
                           alertClass +
-                          ' alert-dismissible fade show"><button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                          ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
                           txt +
                           "</div>";
                         if (alertClass && txt) {
@@ -984,7 +984,7 @@ var theme = {
    */
   codeSnippet: () => {
     var btnHtml =
-      '<button type="button" className="btn btn-sm btn-white rounded-pill btn-clipboard">Copy</button>';
+      '<button type="button" class="btn btn-sm btn-white rounded-pill btn-clipboard">Copy</button>';
     document
       .querySelectorAll(".code-wrapper-inner")
       .forEach(function (element) {
