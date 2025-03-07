@@ -6,6 +6,6 @@ export enum Information {
   ADDRES_SAC = "Km 29.9 Carretera Interamericana San Lucas Sacatepequez",
   WAZE = "https://waze.com/ul/h9fx7mkuvt",
   WAZE_SAC = "https://waze.com/ul/h9fxe0g7wg",
-  WHATSSAP_CH = `https://api.whatsapp.com/send?phone=50240816687&text=Hola,%20me%20gustaría%20agendar%20una%20cita%20en%20Dentum.%20¿Podrían%20darme%20más%20información%3F
+  WHATSSAP_CH = `https://api.whatsapp.com/send?phone=50255657921&text=Hola,%20me%20gustaría%20agendar%20una%20cita%20en%20Dentum.%20¿Podrían%20darme%20más%20información%3F
 `,
 }
